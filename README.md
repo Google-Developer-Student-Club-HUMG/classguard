@@ -1,4 +1,4 @@
-# Google Developer Student Clubs Hanoi University of Mining and Geology
+# Google Developer Student Clubs  Hanoi University of Mining and Geology
 
 ## 1. Challenge
 
