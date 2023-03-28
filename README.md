@@ -1,4 +1,4 @@
-# Google Developer Student Clubs </br> Hanoi University of Mining and Geology
+# <div style="text-align:center"><img src ="..." /></div>
 
 ## 1. Challenge
 
