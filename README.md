@@ -1,4 +1,4 @@
-# gdsc-humg
+# Google Developer Student Clubs Hanoi University of Mining and Geology
 
 In many countries, a significant percentage of students report experiencing bullying in school. 
 For example, in one survey, over one-third of students in 39 countries reported being bullied in the past month.
@@ -13,4 +13,6 @@ Some forms of violence are more prevalent in certain regions.
 For example, in one survey, physical fighting was more common in African and Eastern Mediterranean countries, 
 while bullying was more common in European and Western Pacific countries.
 
+#
 
+We built this solution around the 17 Sustainable Development Goals of the United Nations.
