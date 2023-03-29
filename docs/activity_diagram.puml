@@ -1,0 +1,28 @@
+@startuml Sơ đồ tuần tự
+actor User
+
+User -> ViewController: pressStartButton()
+activate ViewController
+ViewController -> CameraController: initialize()
+activate CameraController
+CameraController -> CameraController: start()
+activate CameraController
+loop
+    CameraController -> CameraController: captureFrame()
+    activate CameraController
+    CameraController -> Model: detectObjects(frame)
+    activate Model
+    Model -> CameraController: objectsDetected(objects)
+    deactivate Model
+    CameraController -> ViewController: displayCamera(frame)
+    activate ViewController
+    ViewController -> ResultView: showResults(objects)
+    activate ResultView
+    ResultView -> ViewController: displayed()
+    deactivate ResultView
+    deactivate ViewController
+    CameraController -> CameraController: showFrame(frame)
+    deactivate CameraController
+end
+CameraController -> CameraController: stop()
+@enduml
