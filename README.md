@@ -17,7 +17,7 @@ while bullying was more common in European and Western Pacific countries.
 
 ## 2. What does our solution solve?
 
-Preventing school violence helps address many of the United Nations' Sustainable Development Goals
+Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
 Target 1. Poverty alleviation - Education is one of the important factors to help improve living conditions and reduce poverty. However, if school violence is left unchecked, it can have negative consequences for the health and education of students.
 
