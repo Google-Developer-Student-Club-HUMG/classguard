@@ -6,6 +6,12 @@ void main() {
   runApp(const MyApp());
 }
 
+/// Lớp MyApp
+///
+/// Ứng dụng chính, khởi chạy SafeClassView khi người dùng chọn
+/// bắt đầu sử dụng camera. Mô hình này sử dụng thư viện Flutter
+/// và các công nghệ máy học như TFLite để phân tích video và
+/// phát hiện bạo lực trong thời gian thực.
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 

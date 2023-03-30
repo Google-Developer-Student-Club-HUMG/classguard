@@ -1,0 +1,22 @@
+@startuml SafeClass
+title Violence Detection App
+
+actor User
+participant SafeClassView
+participant SafeClassController
+participant SafeClassModel
+participant Camera
+participant ImageProcessing
+participant Model
+
+User -> SafeClassView: opens the app
+SafeClassView -> Camera: start the camera stream
+Camera -> SafeClassController: sends camera frames
+SafeClassController -> ImageProcessing: preprocesses the frame
+ImageProcessing -> Model: performs inference on the frame
+Model -> SafeClassController: returns the prediction
+SafeClassController -> SafeClassModel: updates the objects list
+SafeClassModel -> SafeClassView: notifies the view of the changes
+SafeClassView -> SafeClassModel: retrieves the updated objects list
+SafeClassView -> SafeClassView: updates the view with the new objects
+@enduml

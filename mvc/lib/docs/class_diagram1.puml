@@ -1,0 +1,86 @@
+@startuml Biểu đồ lớp
+title Biểu đồ lớp
+
+class CameraController {
+  + Future<void> initialize()
+  + void startImageStream(Function(CameraImage image) onImageAvailable)
+  + void stopImageStream()
+  + void dispose()
+}
+
+class ImageUtils {
+  + ui.Image convertCameraImage(CameraImage cameraImage)
+}
+
+class ImageProcessor {
+  + TensorImage process(TensorImage tensorImage)
+}
+
+class ImageProcessorBuilder {
+  + ImageProcessorBuilder add(ImageProcessorOp op)
+}
+
+class Interpreter {
+  + Interpreter.fromAsset(String assetName)
+  + Tensor getOutputTensor(int index)
+  + void run(Tensor input, Tensor output)
+  + void close()
+}
+
+class InterpreterOptions {
+  - int threads
+}
+
+class NormalizeOp {
+  + NormalizeOp(double mean, double std)
+}
+
+class ResizeOp {
+  + ResizeOp(int targetHeight, int targetWidth, ResizeMethod method)
+}
+
+class ResizeWithCropOrPadOp {
+  + ResizeWithCropOrPadOp(int targetHeight, int targetWidth)
+}
+
+class Tensor {
+  - Uint8List buffer
+  - List<int> shape
+  - int type
+}
+
+class TensorBuffer {
+  + static TensorBuffer createFixedSize(List<int> shape, int type)
+  + List<double> getDoubleList()
+  + void getBuffer()
+}
+
+class TensorImage {
+  + TensorImage.fromImage(ui.Image image)
+  + Tensor buffer
+  + int height
+  + int width
+}
+
+enum ResizeMethod {
+  NEAREST_NEIGHBOUR
+}
+
+interface ImageProcessorOp {
+  + TensorImage process(TensorImage input)
+}
+
+SafeClassController -> CameraController
+SafeClassController -> ImageUtils
+SafeClassController -> ImageProcessor
+SafeClassController -> Interpreter
+SafeClassController -> NormalizeOp
+SafeClassController -> ResizeOp
+SafeClassController -> ResizeWithCropOrPadOp
+SafeClassController -> Tensor
+SafeClassController -> TensorBuffer
+SafeClassController -> TensorImage
+ImageProcessorBuilder -> ImageProcessorOp
+ImageProcessor -> ImageProcessorOp
+Interpreter -> InterpreterOptions
+@enduml

@@ -1,10 +1,14 @@
-import 'package:flutter/material.dart';
 import 'package:camera/camera.dart';
+import 'package:flutter/material.dart';
 
 import 'result_view.dart';
 import 'sc_controller.dart';
 import 'sc_model.dart';
 
+/// Lớp SafeClassView
+///
+/// Giao diện người dùng của ứng dụng, hiển thị video từ camera và
+/// kết quả phân tích phát hiện được từ SafeClassModel.
 class SafeClassView extends StatefulWidget {
   const SafeClassView({super.key});
 
@@ -41,7 +45,6 @@ class _SafeClassViewState extends State<SafeClassView> {
           CameraController(cameras.first, ResolutionPreset.high);
       await cameraController.initialize();
       cameraController.startImageStream((CameraImage image) {
-        // Xử lý frame ảnh ở đây
         controller.detectObjects(image);
       });
       return cameraController;
@@ -53,14 +56,12 @@ class _SafeClassViewState extends State<SafeClassView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Object Detection App'),
-      ),
+      appBar: AppBar(title: const Text('Violence Detection App')),
       body: FutureBuilder(
         future: _cameraControllerFuture,
         builder: (BuildContext context, AsyncSnapshot snapshot) {
           if (snapshot.hasError || snapshot.data is! CameraController) {
-            return const Center(child: Text('Không thể khởi tạo camera'));
+            return const Center(child: Text('Cannot initialize camera'));
           } else if (snapshot.connectionState == ConnectionState.done) {
             final cameraController = snapshot.data as CameraController;
             return Stack(

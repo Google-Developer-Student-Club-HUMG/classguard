@@ -1,0 +1,35 @@
+@startuml Biểu đồ lớp
+title Biểu đồ lớp
+
+class SafeClassModel {
+  - List<ViolenceDetection> objects
+}
+
+class ViolenceDetection {
+  - double score
+  - Rect box
+  + String label
+}
+
+class SafeClassController {
+  - Interpreter? _interpreter
+  - TensorBuffer _outputBuffer
+  + void loadModel(String modelFileName)
+  + Future detectObjects(CameraImage cameraImage)
+}
+
+class SafeClassView {
+  - Future _cameraControllerFuture
+  + Widget build(BuildContext context)
+}
+
+class MyApp {
+  + Widget build(BuildContext context)
+}
+
+SafeClassView -> SafeClassModel
+SafeClassView -> SafeClassController
+SafeClassController -> SafeClassModel
+MyApp -> SafeClassView
+
+@enduml
