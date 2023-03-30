@@ -78,7 +78,14 @@ class _SafeClassViewState extends State<SafeClassView> {
                     child: AnimatedBuilder(
                       animation: controller,
                       builder: (context, child) {
-                        return ResultView(model.objects);
+                        return Container(
+                          color: Colors.grey.withAlpha(100),
+                          child: Text(
+                            SafeClassModel().label,
+                            style: Theme.of(context).textTheme.headlineMedium,
+                            textAlign: TextAlign.center,
+                          ),
+                        );
                       },
                     ),
                   ),

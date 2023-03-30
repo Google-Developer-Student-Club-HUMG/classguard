@@ -1,3 +1,4 @@
+import 'dart:collection';
 import 'dart:ui';
 
 /// Lớp SafeClassModel lưu trữ danh sách các đối tượng
@@ -13,7 +14,23 @@ class SafeClassModel {
   factory SafeClassModel() => _model;
 
   /// Danh sách các đối tượng bạo lực phát hiện được.
-  List<ViolenceDetection> objects = [];
+  Queue<ViolenceDetection> objects = Queue<ViolenceDetection>.from([]);
+  int maxQueueSize = 30;
+
+  void addObject(ViolenceDetection detection) {
+    objects.addLast(detection);
+    if (objects.length > maxQueueSize) {
+      objects.removeFirst();
+    }
+  }
+
+  bool hasViolenceDetection() {
+    return objects.any((detection) => detection.score > 0.5);
+  }
+
+  String get label => hasViolenceDetection()
+      ? 'Bạo lực đã được phát hiện'
+      : 'Không phát hiện bạo lực';
 }
 
 /// Đại diện cho một đối tượng bạo lực phát hiện được

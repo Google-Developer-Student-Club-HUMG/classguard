@@ -113,7 +113,7 @@ class SafeClassController with ChangeNotifier {
     _interpreter?.run(tensorImage.buffer, _outputBuffer!.getBuffer());
     var prediction = _outputBuffer!.getDoubleList().first;
     var object = ViolenceDetection(score: prediction, box: Rect.zero);
-    SafeClassModel().objects = [object];
+    SafeClassModel().addObject(object);
     notifyListeners();
   }
 }
