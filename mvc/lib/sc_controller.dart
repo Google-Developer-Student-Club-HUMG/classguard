@@ -80,6 +80,8 @@ class SafeClassController with ChangeNotifier {
 
   Interpreter? _interpreter;
   TensorBuffer? _outputBuffer;
+  int _inputHeight = 128;
+  int _inputWidth = 128;
 
   @override
   void dispose() {
@@ -96,6 +98,10 @@ class SafeClassController with ChangeNotifier {
     var shape = _interpreter!.getOutputTensor(0).shape;
     var type = _interpreter!.getOutputTensor(0).type;
     _outputBuffer = TensorBuffer.createFixedSize(shape, type);
+    final inputTensor = _interpreter!.getInputTensor(0);
+    final inputShape = inputTensor.shape;
+    _inputHeight = inputShape[1];
+    _inputWidth = inputShape[2];
   }
 
   /// Phân tích cameraImage để phát hiện bạo lực.
@@ -106,7 +112,8 @@ class SafeClassController with ChangeNotifier {
     int cropSize = min(tensorImage.height, tensorImage.width);
     ImageProcessor imageProcessor = ImageProcessorBuilder()
         .add(ResizeWithCropOrPadOp(cropSize, cropSize))
-        .add(ResizeOp(128, 128, ResizeMethod.NEAREST_NEIGHBOUR))
+        .add(
+            ResizeOp(_inputHeight, _inputWidth, ResizeMethod.NEAREST_NEIGHBOUR))
         .add(NormalizeOp(0, 255))
         .build();
     tensorImage = imageProcessor.process(tensorImage);
