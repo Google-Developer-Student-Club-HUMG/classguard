@@ -46,10 +46,10 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 <h4><b>4.</b></h4> Implementation ClassGuard includes 3 main components:  
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 
-<img align-items:center" src="https://user-images.githubusercontent.com/94677059/229192594-08835d1a-ac65-408a-b326-c31acb877f02.png">
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229192594-08835d1a-ac65-408a-b326-c31acb877f02.png">
 1. Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
 
-<img align-items:center" src="https://user-images.githubusercontent.com/94677059/229191671-9403b0b8-660d-453d-987b-f427850dfcb2.png">
+<img style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229191671-9403b0b8-660d-453d-987b-f427850dfcb2.png">
 
 
 **2.** Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
