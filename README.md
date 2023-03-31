@@ -1,6 +1,5 @@
 
-![Logo](https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png)
-
+<img style="width:30%" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
 ## 1. Challenge
 
 In many countries, a significant percentage of students report experiencing bullying in school. 
