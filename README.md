@@ -44,7 +44,7 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 **3.2** ClassGuard uses artificial intelligence (AI) to detect and monitor violent behaviors in classrooms and other monitored areas. The system automatically extracts video clips featuring violent actions detected by AI. These clips are then visually analyzed to confirm and classify ambiguous violent behaviors. This process helps improve the accuracy of the AI model and system by continuously collecting additional data and training. This solution aims to quickly identify and alert cases of violence requiring intervention while minimizing false alarms and optimizing the system's accuracy.
 
-<h4><b>4.</b></h4> Implementation ClassGuard includes 3 main components:  
+## 4. Implementation ClassGuard includes 3 main components: 
 
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 
@@ -53,7 +53,6 @@ Our team has chosen a multi-tiered architecture for the ClassGuard solution, whi
 1. Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
 
 <img style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229191671-9403b0b8-660d-453d-987b-f427850dfcb2.png">
-
 
 **2.** Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
 
@@ -66,9 +65,11 @@ Our team has chosen a multi-tiered architecture for the ClassGuard solution, whi
 <h3>*Technology used in the website*</h3>
 
 **Front-end:** Reactjs.
+
 **Back-end:** Firebase.
 
 Function of the website:
+
  **Authentication:** Email and password based authentication, Google, Facebook, GitHub.
 
 **Cloud Firestore:** :we save user data after registration, Admin management, Posts(anonymous posts or no), Share in addition, we also save each user's posts and display from newest hottest to oldest
@@ -76,16 +77,25 @@ Function of the website:
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
 ## 5. Solution Demo
+
 https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-b0af-9e7b1c4d9fc9.mp4
 
 ***
+
 ## 6. The future and next steps for our ClassGuard project involve several aspects:
 
 **5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
+
 **5.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
+
 **5.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
+
 **5.4** Strengthening collaborations: Partner with educational organizations, local authorities, and law enforcement agencies to raise awareness about our solution and its benefits. This also helps us better understand their needs and requirements.
+
 **5.5** International expansion: Develop a strategy to expand the solution to international markets, considering factors such as language support, cultural differences, and regulatory compliance.
+
 **5.6** ClassGuard's technical architecture, as it stands, can support scaling to a larger audience with minor changes:
+
 **5.6.1** Backend infrastructure: Provide a multi-tenant solution to configure for each educational organization. Provide auto-scaling capabilities to meet increased demand, ensuring high availability and performance.
+
 **5.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
