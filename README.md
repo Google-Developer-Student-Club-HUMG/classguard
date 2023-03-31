@@ -1,5 +1,6 @@
 
 ![Logo](https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png)
+
 ## 1. Challenge
 
 In many countries, a significant percentage of students report experiencing bullying in school. 
@@ -37,6 +38,7 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 <h5>Goal 16:</h5>
  Peace, Equity and Decent Work - School violence can reduce students' ability to learn and affect their ability to find work later in life.
 ***
+
 ## 3. What can our system do?
 **3.1** Our solution is to develop a system called ClassGuard - an IoT-based timely warning system for schools to be alerted of ongoing violent behaviors in classrooms and other areas that require monitoring. The main objectives of this system are to protect and supervise classrooms, prevent violent behaviors, and ensure the safety, security, and privacy of both students and teachers.
 
@@ -57,6 +59,7 @@ Our team has chosen a multi-tiered architecture for the ClassGuard solution, whi
 **5.** Direct Visual Classification of Uncertain Violent Behaviors: Manual classification to further train the model, reducing false positives and improving accuracy. This process adheres to security and privacy regulations.
 **6.** Security and Privacy: Throughout the architecture, we implement security measures, such as encryption, access controls, and adherence to data protection regulations, to ensure the privacy and security of students and teachers.
 ***
+
 <h3>*Technology used in the website*</h3>
 
 **Front-end:** Reactjs.
@@ -69,11 +72,12 @@ Function of the website:
 
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
-###4.
+## 4. Solution Demo
 https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-b0af-9e7b1c4d9fc9.mp4
 
+***
+## 5. The future and next steps for our ClassGuard project involve several aspects:
 
-##5.## The future and next steps for our ClassGuard project involve several aspects:
 **5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
 **5.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
 **5.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
