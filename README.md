@@ -20,22 +20,22 @@ while bullying was more common in European and Western Pacific countries.
 ## 2. What does our solution solve?
 Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
-#####Goal 1:#####
+<h5>Goal 1:</h5>
  Poverty alleviation - Education is one of the important factors to help improve living conditions and reduce poverty. However, if school violence is left unchecked, it can have negative consequences for the health and education of students.
 
-#####Goal 3:#####
+<h5>Goal 3:</h5>
 Health and Welfare - School is the main environment for students to develop health and psychosocial development. However, school violence can cause mental health problems and affect children's development.
 
-#####Goal 4:#####
+<h5>Goal 4:</h5>
  Quality Education - School violence can reduce the quality of education and create an unsafe learning environment for students.
 
-#####Goal 5:#####
+<h5>Goal 5:</h5>
  Gender Equality - School violence can affect students not only in terms of health and education but also gender and physical.
 
-#####Goal 10:#####
+<h5>Goal 10:</h5>
 Reduce Inequality - Preventing school violence is one way to reduce inequality in education and create a fair learning environment for all students.
 
-#####Goal 16:#####
+<h5>Goal 16:</h5>
  Peace, Equity and Decent Work - School violence can reduce students' ability to learn and affect their ability to find work later in life.
 ***
 ## 3. What can our system do?
@@ -45,7 +45,7 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 ##**4.**## Implementation ClassGuard includes 3 main components:  
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
-![following high-level components](assets/images/338245586_215699751057341_7758778761779606531_n.png)
+<img src="assets/images/338245586_215699751057341_7758778761779606531_n.png"/>
 
 1. Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
  
