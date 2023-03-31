@@ -51,6 +51,8 @@ Our team has chosen a multi-tiered architecture for the ClassGuard solution, whi
  
 **2.** ![object detection app](assets/images/337490111_602915931443848_6555503424827786896_n.png)
 **3.** Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
+![337490111_602915931443848_6555503424827786896_n](https://user-images.githubusercontent.com/94677059/229191671-9403b0b8-660d-453d-987b-f427850dfcb2.png)
+
 **4.** Frontend: A cross-platform application developed with Flutter for Android and iOS devices. It serves as an interface for school staff to receive notifications, review video clips, and manage settings.
 **5.** Notification System: Responsible for sending real-time alerts to relevant parties, including school staff and security personnel, when violent behavior is detected. It leverages push notifications, email, and SMS for communication.
 **6.** Direct Visual Classification of Uncertain Violent Behaviors: Manual classification to further train the model, reducing false positives and improving accuracy. This process adheres to security and privacy regulations.
