@@ -20,22 +20,22 @@ while bullying was more common in European and Western Pacific countries.
 ## 2. What does our solution solve?
 Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
-#####Goal 1:
+#####Goal 1:#####
  Poverty alleviation - Education is one of the important factors to help improve living conditions and reduce poverty. However, if school violence is left unchecked, it can have negative consequences for the health and education of students.
 
-#####Goal 3:
+#####Goal 3:#####
 Health and Welfare - School is the main environment for students to develop health and psychosocial development. However, school violence can cause mental health problems and affect children's development.
 
-#####Goal 4:
+#####Goal 4:#####
  Quality Education - School violence can reduce the quality of education and create an unsafe learning environment for students.
 
-#####Goal 5:
+#####Goal 5:#####
  Gender Equality - School violence can affect students not only in terms of health and education but also gender and physical.
 
-#####Goal 10:
+#####Goal 10:#####
 Reduce Inequality - Preventing school violence is one way to reduce inequality in education and create a fair learning environment for all students.
 
-#####Goal 16:
+#####Goal 16:#####
  Peace, Equity and Decent Work - School violence can reduce students' ability to learn and affect their ability to find work later in life.
 ***
 ## 3. What can our system do?
@@ -43,18 +43,18 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 **3.2** ClassGuard uses artificial intelligence (AI) to detect and monitor violent behaviors in classrooms and other monitored areas. The system automatically extracts video clips featuring violent actions detected by AI. These clips are then visually analyzed to confirm and classify ambiguous violent behaviors. This process helps improve the accuracy of the AI model and system by continuously collecting additional data and training. This solution aims to quickly identify and alert cases of violence requiring intervention while minimizing false alarms and optimizing the system's accuracy.
 
-##**4.** Implementation ClassGuard includes 3 main components:  
+##**4.**## Implementation ClassGuard includes 3 main components:  
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 ![following high-level components](assets/images/338245586_215699751057341_7758778761779606531_n.png)
 
 1. Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
  
-2. ![object detection app](assets/images/337490111_602915931443848_6555503424827786896_n.png)
-3. Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
-4. Frontend: A cross-platform application developed with Flutter for Android and iOS devices. It serves as an interface for school staff to receive notifications, review video clips, and manage settings.
-5. Notification System: Responsible for sending real-time alerts to relevant parties, including school staff and security personnel, when violent behavior is detected. It leverages push notifications, email, and SMS for communication.
-6. Direct Visual Classification of Uncertain Violent Behaviors: Manual classification to further train the model, reducing false positives and improving accuracy. This process adheres to security and privacy regulations.
-7. Security and Privacy: Throughout the architecture, we implement security measures, such as encryption, access controls, and adherence to data protection regulations, to ensure the privacy and security of students and teachers.
+**2.** ![object detection app](assets/images/337490111_602915931443848_6555503424827786896_n.png)
+**3.** Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
+**4.** Frontend: A cross-platform application developed with Flutter for Android and iOS devices. It serves as an interface for school staff to receive notifications, review video clips, and manage settings.
+**5.** Notification System: Responsible for sending real-time alerts to relevant parties, including school staff and security personnel, when violent behavior is detected. It leverages push notifications, email, and SMS for communication.
+**6.** Direct Visual Classification of Uncertain Violent Behaviors: Manual classification to further train the model, reducing false positives and improving accuracy. This process adheres to security and privacy regulations.
+**7.** Security and Privacy: Throughout the architecture, we implement security measures, such as encryption, access controls, and adherence to data protection regulations, to ensure the privacy and security of students and teachers.
 ***
 <h3>*Technology used in the website*</h3>
 
@@ -71,7 +71,7 @@ Function of the website:
 ###4. [Solution demo](https://youtu.be/4QZ_Oi2goYA)
 ![video demo solution](./assets/images//8317449521855575163.gif)
 
-##5. The future and next steps for our ClassGuard project involve several aspects:
+##5.## The future and next steps for our ClassGuard project involve several aspects:
 **5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
 **5.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
 **5.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
