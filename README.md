@@ -21,23 +21,24 @@ while bullying was more common in European and Western Pacific countries.
 ## 2. What does our solution solve?
 Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
-<h5>Goal 1:</h5>
+<h5><b>Goal 1:</b></h5>
  Poverty alleviation - Education is one of the important factors to help improve living conditions and reduce poverty. However, if school violence is left unchecked, it can have negative consequences for the health and education of students.
 
-<h5>Goal 3:</h5>
+<h5><b>Goal 3:</b></h5>
 Health and Welfare - School is the main environment for students to develop health and psychosocial development. However, school violence can cause mental health problems and affect children's development.
 
-<h5>Goal 4:</h5>
+<h5><b>Goal 4:</b></h5>
  Quality Education - School violence can reduce the quality of education and create an unsafe learning environment for students.
 
-<h5>Goal 5:</h5>
+<h5><b>Goal 5:</b></h5>
  Gender Equality - School violence can affect students not only in terms of health and education but also gender and physical.
 
-<h5>Goal 10:</h5>
+<h5><b>Goal 10:</b></h5>
 Reduce Inequality - Preventing school violence is one way to reduce inequality in education and create a fair learning environment for all students.
 
-<h5>Goal 16:</h5>
+<h5><b>Goal 16:</b></h5>
  Peace, Equity and Decent Work - School violence can reduce students' ability to learn and affect their ability to find work later in life.
+
 ***
 
 ## 3. What can our system do?
