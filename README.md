@@ -1,4 +1,5 @@
-# <div style="text-align:center"><img style="width:30%" src ="./assets/images/logo.png" /></div>
+
+![Logo](./assets/images/logo.png)
 
 ## 1. Challenge
 
@@ -6,7 +7,7 @@ In many countries, a significant percentage of students report experiencing bull
 For example, in one survey, over one-third of students in 39 countries reported being bullied in the past month.
 
 Physical fights between students are also common in many countries. 
-In one survey, over one-third of students in 38 countries reported being in a physical fight in the past year.
+In one survey, over  one-third of students in 38 countries reported being in a physical fight in the past year.
 
 Sexual violence is also a concern in some countries. 
 In one survey, over one-third of female students in 22 countries reported experiencing sexual violence at some point in their lives.
@@ -44,9 +45,11 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 ##**4.** Implementation ClassGuard includes 3 main components:  
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
-# <div style="text-align:center"><img src ="./assets/images/338245586_215699751057341_7758778761779606531_n.png" /></div>
+![following high-level components](assets/images/338245586_215699751057341_7758778761779606531_n.png)
+
 1. Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
-2. # <div style="text-align:center"><img src ="./assets/images/337490111_602915931443848_6555503424827786896_n.png" /></div>
+ 
+2. ![object detection app](assets/images/337490111_602915931443848_6555503424827786896_n.png)
 3. Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
 4. Frontend: A cross-platform application developed with Flutter for Android and iOS devices. It serves as an interface for school staff to receive notifications, review video clips, and manage settings.
 5. Notification System: Responsible for sending real-time alerts to relevant parties, including school staff and security personnel, when violent behavior is detected. It leverages push notifications, email, and SMS for communication.
@@ -66,7 +69,7 @@ Function of the website:
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
 ###4. [Solution demo](https://youtu.be/4QZ_Oi2goYA)
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4QZ_Oi2goYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+![video demo solution](./assets/images//8317449521855575163.gif)
 
 ##5. The future and next steps for our ClassGuard project involve several aspects:
 **5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
