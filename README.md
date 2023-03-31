@@ -1,5 +1,6 @@
 
 <img style="width:30%, align-items:center" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
+
 ## 1. Challenge
 
 In many countries, a significant percentage of students report experiencing bullying in school. 
@@ -44,9 +45,11 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 **3.2** ClassGuard uses artificial intelligence (AI) to detect and monitor violent behaviors in classrooms and other monitored areas. The system automatically extracts video clips featuring violent actions detected by AI. These clips are then visually analyzed to confirm and classify ambiguous violent behaviors. This process helps improve the accuracy of the AI model and system by continuously collecting additional data and training. This solution aims to quickly identify and alert cases of violence requiring intervention while minimizing false alarms and optimizing the system's accuracy.
 
 <h4><b>4.</b></h4> Implementation ClassGuard includes 3 main components:  
+
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229192594-08835d1a-ac65-408a-b326-c31acb877f02.png">
+
 1. Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
 
 <img style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229191671-9403b0b8-660d-453d-987b-f427850dfcb2.png">
@@ -72,11 +75,11 @@ Function of the website:
 
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
-## 4. Solution Demo
+## 5. Solution Demo
 https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-b0af-9e7b1c4d9fc9.mp4
 
 ***
-## 5. The future and next steps for our ClassGuard project involve several aspects:
+## 6. The future and next steps for our ClassGuard project involve several aspects:
 
 **5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
 **5.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
