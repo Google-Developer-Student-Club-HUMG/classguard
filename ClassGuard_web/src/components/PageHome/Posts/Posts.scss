@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;600;700;800&display=swap");
+
+.PostsLayout_Pin {
+  margin-top: 70px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.Pin_card {
+  border-radius: 15px;
+  max-width: 100%;
+  max-height: 550px;
+  display: block;
+  cursor: pointer;
+  background-color: #f2f3f4;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  user-select: none;
+  .Pin_card_Introduce {
+    display: flex;
+    margin: 20px 0 0px 15px;
+    p {
+      margin-top: 5px;
+      margin-left: 10px;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+      max-width: 60%;
+      font-weight: bold;
+      font-size: 14px;
+      font-family: "Open Sans", sans-serif;
+    }
+  }
+  img {
+    max-width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  .content {
+    display: block;
+    margin: 10px 15px 0 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    font-family: "Open Sans", sans-serif;
+  }
+}

@@ -1,0 +1,153 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phoneSmall {
+    @media (max-width: 330px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+}
+.ModalPost {
+  margin-top: 80px;
+}
+/* ================ CREATE POST ================ */
+.create-post {
+  background: #2e2e2e18;
+  border-radius: 20px;
+  display: flex;
+  width: 55%;
+  margin: 30px auto;
+  padding: 20px 10px 25px 10px;
+  flex-direction: column;
+  @include respond(tablet){
+    width: 80%;
+  }
+  @include respond(phone){
+    width: 90%;
+  }
+}
+
+.create-post .input-form {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#create-post_input {
+  width: 83%;
+  height: 35px;
+  border-radius: 8px;
+  padding: 3px 10px;
+  border: 1px solid #000;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.create-post .input-form .btn-post {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin: auto;
+}
+
+/* =========== MODAL POST HIDDEN =============== */
+.showModal {
+  margin-top: 50px;
+}
+.title-form-post{
+  font-size: 20px;
+  @include respond(phone){
+    font-size: 14px;
+  }
+  @include respond(phoneSmall){
+    font-size: 12px;
+  }
+}
+.show-form {
+  background-color: #2e2e2e18;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 0 auto;
+}
+.shareContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  user-select: none;
+}
+.select_control_Post {
+  margin-right: 15px;
+}
+.emoji_Post{
+  position: absolute;
+  z-index: 10000000;
+  right: 70px;
+
+}
+.button_select_control_Post {
+  height: 38px;
+  padding: 0 5px;
+  margin-right: 15px;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  transition: 0.5s;
+  display: inline;
+}
+.button_select_control_Post:hover {
+  background-color: #c7372f;
+  color: #fff;
+}
+.content-form-post {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-form-post label {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.content-form-post .input-title,
+.content-form-post .input-body {
+  font-size: 1rem;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border: 1px solid #000;
+}
+
+.content-form-post .input-title {
+  padding: 15px 13px;
+}
+
+.content-form-post .input-body {
+  padding: 15px 13px;
+}
+
+.btn-post {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+  margin-top: 1rem;
+}
+.btn-post:hover {
+  color: #000;
+  font-weight: bold;
+}

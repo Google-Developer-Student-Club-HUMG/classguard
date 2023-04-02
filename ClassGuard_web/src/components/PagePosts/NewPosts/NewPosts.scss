@@ -1,0 +1,272 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phoneSmall {
+    @media (max-width: 330px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+}
+#NewPosts {
+  width: 100vw;
+  .NewPosts {
+    max-width: 550px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 12px;
+    @include respond(phone){
+      max-width: 90%;
+    }
+    #header_NewPosts {
+      display: flex;
+      justify-content: space-between;
+      .header_NewPosts {
+        margin: 15px 15px 0 15px;
+        .NameUserNewPosts_TimeNewPosts {
+          margin-left: 10px;
+          font-family: "Open Sans", sans-serif;
+          .NameUserNewPosts {
+            margin: 0;
+            font-weight: 800;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            max-width: calc(550px * 2 / 3.5);
+          }
+          .TimeNewPosts {
+            margin: 0;
+            font-weight: 600;
+          }
+        }
+      }
+      .View_NewPosts {
+        position: relative;
+        display: inline;
+        padding: 15px 12px;
+        cursor: pointer;
+        .View_NewPosts_MoreOutlined {
+          font-weight: 800;
+          font-size: 18px;
+        }
+        .openControlPost {
+          display: flex;
+          justify-content: flex-end;
+          ul {
+            border-radius: 12px;
+            position: absolute;
+            background-color: #F2F3F4;
+            padding-left: 0;
+            margin: 8px 5px 0 0;
+            p {
+              padding: 2px 15px;
+              color: #333;
+              margin: 10px;
+              user-select: none;
+            }
+          }
+          ul:hover{
+            background-color: #C7372F;
+            p{
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+
+    .articleTitle_NewPosts {
+      max-width: calc(550px - 30px);
+      margin: 0 20px;
+      p {
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px;
+        word-wrap: break-word;
+      }
+    }
+    .div_Img_NewPosts {
+      max-width: 550px;
+      max-height: 550px;
+      .Img_NewPosts {
+        width: auto;
+        background-size: contain;
+        background-position: center;
+        margin: 0 auto;
+        object-fit: cover;
+      }
+    }
+    .Seen_Like_NewPosts {
+      margin: 25px 15px 15px 15px;
+      display: flex;
+      justify-content: space-between;
+      user-select: none;
+      // Like_NewPosts
+      .Like_NewPosts {
+        display: flex;
+        cursor: pointer;
+        .img_Like_NewPosts {
+          display: inline;
+          width: 23px;
+          height: 23px;
+        }
+        p {
+          margin: 0 5px;
+          color: #6b6b6b;
+        }
+      }
+
+      //Count_dislike
+      .Count_dislike {
+        display: flex;
+        cursor: pointer;
+        color: #6b6b6b;
+        .img_DisLike_NewPosts {
+          display: inline;
+          width: 23px;
+          height: 23px;
+        }
+        p {
+          margin: 0 5px;
+          color: #6b6b6b;
+        }
+      }
+    }
+    .handle_emoticon_NewPosts {
+      width: 85%;
+      display: flex;
+      margin: 0 auto;
+      border-top: 1px solid #ccc;
+      button {
+        border-radius: 5px;
+        height: 35px;
+        cursor: pointer;
+        border: none;
+        background-color: #ffffff;
+        margin: 3px 8px;
+      }
+      .handle_Like_NewPosts,
+      .handle_Comment_NewPosts,
+      .handle_Dislike_NewPosts {
+        width: 33%;
+        font-family: "Open Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        img,
+        .icon_Comment_NewPosts {
+          max-width: 20px;
+          height: 20px;
+          font-size: 20px;
+          color: #3f3f3f;
+        }
+        span {
+          line-height: 25px;
+          margin-left: 5px;
+        }
+      }
+
+      .handle_Like_NewPosts:hover,
+      .handle_Comment_NewPosts:hover,
+      .handle_Dislike_NewPosts:hover {
+        background-color: #cccccc6f;
+      }
+    }
+    .input_comment {
+      display: flex;
+      align-items: center;
+      width: 85%;
+      margin: 0 auto;
+      border-top: 1px solid #cccccc;
+      position: relative;
+      user-select: none;
+      .input_comment_post {
+        margin: 10px 0;
+        width: 100%;
+        height: 35px;
+        border-radius: 12px;
+        border: none;
+        background-color: #f0f2f5;
+        padding-left: 15px;
+        outline: none;
+        font-size: 0.85rem;
+        position: relative;
+        font-family: "Open Sans", sans-serif;
+      }
+      .SendOutlined,
+      .SmileOutlined {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px;
+        padding: 5px;
+      }
+      .SmileOutlined {
+        right: 50px;
+      }
+      .SendOutlined {
+        right: 15px;
+      }
+    }
+    .emoji_NewPost {
+      width: auto;
+      transform: translateY(0px);
+      opacity: 1;
+      transition: all 0.5s ease;
+    }
+
+    .emoji_NewPost_none {
+      display: none;
+    }
+  }
+  .commentWrapper_post {
+    max-height: 300px;
+    max-width: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    margin-left: 15px;
+    .comments_Post_user {
+      margin: 10px 0;
+      .commentWrapper {
+        display: flex;
+        .commentInfo {
+          margin-left: 6px;
+          max-width: 80%;
+          background-color: #f0f2f5;
+          border-radius: 18px;
+          padding: 5px 12px 12px 12px;
+          .commentUserName {
+            font-size: 0.8rem;
+            font-family: "Open Sans", sans-serif;
+            margin: 0;
+            font-weight: 600;
+            margin-bottom: 5px;
+          }
+          .commentText {
+            margin: 0;
+            font-size: 0.8rem;
+            font-family: "Open Sans", sans-serif;
+            word-wrap: break-word;
+            color: #000000d7;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}

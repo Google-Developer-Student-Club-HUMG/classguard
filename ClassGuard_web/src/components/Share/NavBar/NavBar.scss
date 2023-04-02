@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap");
+@mixin respond($breakpoint) {
+  @if $breakpoint == phoneSmall {
+    @media (max-width: 330px) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $breakpoint == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $breakpoint == desktop {
+    @media (min-width: 1025px) {
+      @content;
+    }
+  }
+}
+:root {
+  --color-secondary: hsl(252, 100%, 90%);
+  --color-success: hsl(120, 95%, 65%);
+  --color-danger: hsl(0, 95%, 65%);
+  --color-black: hsl(252, 30%, 10%);
+}
+
+html {
+  //   font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: 500;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  transition: all 300ms ease;
+  background: #2fcbc3;
+  border: #fff;
+}
+// .btn:hover {
+//   background-color: #fff;
+//   border: 2px solid #2fcbc3;
+// }
+
+.warpper {
+  width: 85%;
+  margin: 10px auto;
+  @include respond(phone) {
+    width: 100%;
+  }
+}
+.warpper_MenuOutlined {
+  color: #000;
+  padding: 5px 10px 0px 10px;
+  font-size: 20px;
+  cursor: pointer;
+  width: fit-content;
+  display: none;
+  @include respond(tablet) {
+    display: none;
+  }
+  @include respond(phone) {
+    display: block;
+  }
+  .togleMenuPhone {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    .warpper_MenuOutlined_icon {
+      padding: 0px 10px 5px 10px;
+    }
+    .logOut_phone {
+      width: max-content;
+      margin-right: 10px;
+      .btn-logOut {
+        margin: 0px;
+        user-select: none;
+        color: #fff;
+      }
+      .btn {
+        font-size: 12px;
+        padding: 8px 12px;
+      }
+    }
+  }
+  .togleMenuPhone_Menu {
+    width: 256px;
+    margin-left: 30px;
+    background-color: #e5e5e5e5;
+    border-radius: 8px;
+    position: absolute;
+    z-index: 1000000;
+  }
+}
+
+#top {
+  @include respond(phone) {
+    display: none;
+  }
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+#top .logo h3 {
+  font-size: 1.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#top .nav {
+}
+
+#top .nav a {
+  margin: 0 6px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+  width: max-content;
+  padding: 10px 12px;
+  border-radius: 8px;
+}
+#top .nav a:hover {
+  background-color: #2fcbc3;
+  color: #fff;
+  transition: 0.4s;
+}
+#top .logOut .btn-logOut {
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #fff;
+}
+#top .logOut .btn-logOut:hover {
+  color: #000;
+  background-color: #fff;
+  border: 2px solid #2fcbc3;
+  // font-weight: bold;
+}
+
+/* ========================== Create Post ====================== */
+
+.profile-picture {
+  width: 2.7rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
