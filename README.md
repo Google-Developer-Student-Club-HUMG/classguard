@@ -148,15 +148,11 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
 ## Main UI
 
 ### Admin UI
-
-https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/5#issue-1651668857
-
-https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/6#issue-1651669334
+<img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/5#issue-1651668857">
+<img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/6#issue-1651669334">
 
 ### User UI
-
-https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/7#issue-1651678329
-
+<img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/7#issue-1651678329">
 
 #How to use
 
