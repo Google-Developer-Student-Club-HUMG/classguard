@@ -165,5 +165,10 @@ First you need to clone this project to your local machine, and you should have 
 
 ```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
 
+After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_web```
+
+Let's run the project!!!🤩🤩
+```npm start```
+
 
 
