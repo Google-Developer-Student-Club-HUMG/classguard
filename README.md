@@ -5,8 +5,7 @@
 - [3. What can our system do?](#What-can-our-system-do)
 - [4. Implementation ClassGuard includes 3 main components](#Implementation-ClassGuard-includes-3-main-components)
   - [High-level components](#high_level-components)
-  - [Collect data and IoT/AI devices with cameras](#collect-data-and-io tai-devices-with-cameras)
-  - [Collect data and IoT/AI devices with cameras](#Collect-data-and-IoT/AI-devices-with-cameras)
+  - [Collect data and IoT/AI devices with cameras](#Implementation-ClassGuard-includes-3-main-components)
 - [5. Solution Demo](#Solution-Demo)
 - [6. The future and next steps for our ClassGuard project involve several aspects](#The-future-and-next-steps-for-our-ClassGuard-project-involve-several-aspects)
 
@@ -121,5 +120,12 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 **6.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
 
 
-# 7. 
+# 7. ClassGuard Web
+
+The gateway dashboard web help administrators manage your organization.
+
+This project is open-source, you can use our system or self-host for your organization.
+
+You can use our product in here: **[solutionchallengehumg2023.web.app](solutionchallengehumg2023.web.app)**
+
 
