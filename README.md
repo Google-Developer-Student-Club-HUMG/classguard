@@ -143,12 +143,12 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
  
 ## Main UI
 ### Admin UI
-<img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/5#issue-1651668857">
-<img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/6#issue-1651669334">
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477704-5dd3d6d1-9011-49d7-9a21-75fff4f8595d.png">
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477892-6c04fedf-b886-4016-a332-b9e8949b09ee.png">
 ### User UI
-<img  style="align-items:center" src="Screenshot 2023-04-03 161926.png">
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229478046-15b590d4-2fbf-4cc8-9cfe-c6fe57560477.png">
 
-#How to use
+# How to use
 ## With self-host
 ### Development
 First you need to clone this project to your local machine, and you should have register a firebase project and create web, you can follow this [link]( https://firebase.google.com/docs/web/setup?authuser=0&hl=en)
