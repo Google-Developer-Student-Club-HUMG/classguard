@@ -5,7 +5,7 @@
 - [3. What can our system do?](#What-can-our-system-do)
 - [4. Implementation ClassGuard includes 3 main components](#Implementation-ClassGuard-includes-3-main-components)
   - [High-level components](#high_level-components)
-  - [Data Collection and IoT/AI Devices (AI Camera)](#data-collection-and-io tai-devices-ai-camera)
+  - [Data Collection and IoT/AI Devices (AI Camera)](#data-collection-and-iot/ai-devices-ai-camera)
 - [5. Solution Demo](#Solution-Demo)
 - [6. The future and next steps for our ClassGuard project involve several aspects](#The-future-and-next-steps-for-our-ClassGuard-project-involve-several-aspects)
 
