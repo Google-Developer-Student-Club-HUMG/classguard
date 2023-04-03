@@ -161,14 +161,14 @@ After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_web``
 Let's run the project!!!🤩🤩
 ```npm start```
 
-*admin account:
+**admin account:**
+
 email:
 ```Admin@gmail.com```
-
 password:
 ```admin123456```
 
-*user account:
+**user account:**
 Please create your own user account <3
 
 
