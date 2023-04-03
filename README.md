@@ -1,5 +1,6 @@
 
 # Table of Contents
+<<<<<<< HEAD
 - [Table of Contents](#table-of-contents)
 - [Challenge](#challenge)
 - [What does our solution solve](#what-does-our-solution-solve)
@@ -19,6 +20,20 @@
 - [How to use](#how-to-use)
   - [With self-host](#with-self-host)
     - [Development](#development)
+=======
+- [1. Challenge](#Challenge)
+- [2. What does our solution solve?](#What-does-our-solution-solve)
+- [3. What can our system do?](#What-can-our-system-do)
+- [4. Implementation ClassGuard includes 3 main components](#Implementation-ClassGuard-includes-3-main-components)
+  - [High-level components](#high_level-components)
+  - [Collect data and IoT/AI devices with cameras](#Implementation-ClassGuard-includes-3-main-components)
+- [5. Solution Demo](#Solution-Demo)
+- [6. The future and next steps for our ClassGuard project involve several aspects](#The-future-and-next-steps-for-our-ClassGuard-project-involve-several-aspects)
+- [7. ClassGuard Web](#ClassGuard-Web)
+  - [Main feature](#Main-feature)
+  - [Main UI](#Main-UI)
+  - [How to use](#How-to-use)
+>>>>>>> f96fc4d68ac83440b83f054d60008a8a12f41aad
  
 ***
 
@@ -130,7 +145,7 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 **6.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
 
 
-# 7. ClassGuard Web
+# ClassGuard Web
 The gateway dashboard web help administrators manage your organization.
 
 This project is open-source, you can use our system or self-host for your organization.
