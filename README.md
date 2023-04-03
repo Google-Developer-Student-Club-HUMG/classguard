@@ -121,7 +121,6 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 
 
 # 7. ClassGuard Web
-
 The gateway dashboard web help administrators manage your organization.
 
 This project is open-source, you can use our system or self-host for your organization.
@@ -129,9 +128,7 @@ This project is open-source, you can use our system or self-host for your organi
 You can use our product in here: **[solutionchallengehumg2023.web.app](solutionchallengehumg2023.web.app)**
 
 ## Main feature
-
 ### Admin
-
 * Manage your account
     * account management ✔
     * Modify information of your account ❌ (coming soon)
@@ -140,27 +137,20 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
     * manage posts, like, dislike, comment, user ✔
 
 ### User
-
 * create account, create post, like, dislike, comment ✔
 * share, chat ❌ (coming soon)
  
  
 ## Main UI
-
 ### Admin UI
 <img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/5#issue-1651668857">
 <img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/6#issue-1651669334">
-
 ### User UI
 <img  style="align-items:center" src="https://github.com/Google-Developer-Student-Club-HUMG/classguard/issues/7#issue-1651678329">
 
 #How to use
-
-
 ## With self-host
-
 ### Development
-
 First you need to clone this project to your local machine, and you should have register a firebase project and create web, you can follow this [link]( https://firebase.google.com/docs/web/setup?authuser=0&hl=en)
 
 ```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
