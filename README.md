@@ -1,5 +1,14 @@
 
-  <img src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
+# Table of Contents
+- [Challenge](#Challenge)
+- [What does our solution solve?](#What does our solution solve?)
+ - [ What can our system do?](# What can our system do?)
+  - [Data Analysis](#data-analysis)
+- [Results](#results)
+- [Discussion](#discussion)
+- [Conclusion](#conclusion)
+
+
 
 
 ## 1. Challenge
@@ -105,3 +114,7 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 **5.6.1** Backend infrastructure: Provide a multi-tenant solution to configure for each educational organization. Provide auto-scaling capabilities to meet increased demand, ensuring high availability and performance.
 
 **5.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
+
+
+## 6. 
+
