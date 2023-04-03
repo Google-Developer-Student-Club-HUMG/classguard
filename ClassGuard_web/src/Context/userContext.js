@@ -86,7 +86,7 @@ export const ContextProivider = ({ children }) => {
       });
   };
 
-  // signInWithGitHub
+    // signInWithGitHub
   const signInWithGithub = async () => {
     const ghProvider = new GithubAuthProvider();
     await signInWithPopup(auth, ghProvider)
@@ -99,39 +99,39 @@ export const ContextProivider = ({ children }) => {
         console.log("error:", error);
       });
   };
-  //onAuthStateChanged
-  useEffect(() => {
-    setLoading(true);
-    const unsubcribe = onAuthStateChanged(auth, async (res) => {
-      if (res) {
-        setLoading(false);
-        const { displayName, email, photoURL, uid, roles } = res;
-        setUser({
-          displayName: displayName,
-          photoURL: photoURL,
-          email,
-          uid,
-          roles,
-        });
-        // admin
-        await getDoc(doc(db, "user", res.uid)).then((doc) => {
-          if (doc.data().roles === "admin") {
-            navigate("/admin");
-          } else {
-            navigate("/");
-          }
-        });
-        //If the account does not exist in the database => login
-      } else if (doc.data().roles !== "admin") {
-        setLoading(false);
-        navigate("/login");
-
-      }
-    });
-    return () => {
-      unsubcribe();
-    };
-  }, []);
+//onAuthStateChanged
+useEffect(() => {
+  setLoading(true);
+  const unsubcribe = onAuthStateChanged(auth, async(res) => {
+    if (res) {
+      setLoading(false);
+      const { displayName, email, photoURL, uid, roles } = res;
+      setUser({
+        displayName: displayName,
+        photoURL: photoURL,
+        email,
+        uid,
+        roles,
+      });
+      // admin
+   await   getDoc(doc(db, "user", res.uid)).then((doc) => {
+        if (doc.data().roles === "admin") {
+          navigate("/admin");
+        } else {
+          navigate("/");
+        }
+      });
+      //If the account does not exist in the database => login
+    } else if(doc.data().roles !== "admin"){
+      setLoading(false);
+      navigate("/login");
+      
+    }
+  });
+  return () => {
+    unsubcribe();
+  };
+}, []);
   const contextValue = {
     user,
     loading,

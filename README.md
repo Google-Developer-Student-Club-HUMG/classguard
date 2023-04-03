@@ -1,8 +1,28 @@
 
-  <img src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
+# Table of Contents
+- [Table of Contents](#table-of-contents)
+- [Challenge](#challenge)
+- [What does our solution solve](#what-does-our-solution-solve)
+- [What can our system do](#what-can-our-system-do)
+- [Implementation ClassGuard includes 3 main components](#implementation-classguard-includes-3-main-components)
+  - [High\_level components](#high_level-components)
+  - [Collect data and IoT/AI devices with cameras](#collect-data-and-iotai-devices-with-cameras)
+- [Solution Demo](#solution-demo)
+- [The future and next steps for our ClassGuard project involve several aspects](#the-future-and-next-steps-for-our-classguard-project-involve-several-aspects)
+- [7. ClassGuard Web](#7-classguard-web)
+  - [Main feature](#main-feature)
+    - [Admin](#admin)
+    - [User](#user)
+  - [Main UI](#main-ui)
+    - [Admin UI](#admin-ui)
+    - [User UI](#user-ui)
+- [How to use](#how-to-use)
+  - [With self-host](#with-self-host)
+    - [Development](#development)
+ 
+***
 
-
-## 1. Challenge
+# Challenge
 
 In many countries, a significant percentage of students report experiencing bullying in school. 
 For example, in one survey, over one-third of students in 39 countries reported being bullied in the past month.
@@ -18,7 +38,7 @@ For example, in one survey, physical fighting was more common in African and Eas
 while bullying was more common in European and Western Pacific countries.
 
 ***
-## 2. What does our solution solve?
+# What does our solution solve
 Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
 <h5><b>Goal 1:</b></h5>
@@ -41,30 +61,33 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 ***
 
-## 3. What can our system do?
+# What can our system do
+
 **3.1** Our solution is to develop a system called ClassGuard - an IoT-based timely warning system for schools to be alerted of ongoing violent behaviors in classrooms and other areas that require monitoring. The main objectives of this system are to protect and supervise classrooms, prevent violent behaviors, and ensure the safety, security, and privacy of both students and teachers.
 
 **3.2** ClassGuard uses artificial intelligence (AI) to detect and monitor violent behaviors in classrooms and other monitored areas. The system automatically extracts video clips featuring violent actions detected by AI. These clips are then visually analyzed to confirm and classify ambiguous violent behaviors. This process helps improve the accuracy of the AI model and system by continuously collecting additional data and training. This solution aims to quickly identify and alert cases of violence requiring intervention while minimizing false alarms and optimizing the system's accuracy.
 
-## 4. Implementation ClassGuard includes 3 main components: 
-
+# Implementation ClassGuard includes 3 main components
+## High_level components
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229192594-08835d1a-ac65-408a-b326-c31acb877f02.png">
 
-**1.** Data Collection and IoT/AI Devices (AI Camera): This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
+## Collect data and IoT/AI devices with cameras
+
+This layer includes IoT devices such as cameras and microphones installed in classrooms and other monitored areas. These devices are connected to Raspberry Pi units running TensorFlow Lite for real-time audio and video data collection and AI model deployment. They detect violent behaviors in real time and send extracted video clips to Firebase Cloud Storage. We also developed a Flutter smartphone app for rapid model and algorithm testing during development.
 
 <img style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229191671-9403b0b8-660d-453d-987b-f427850dfcb2.png">
 
-**2.** Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
+**1.** Backend: We use Firebase as the backend to receive and securely store video clips from the AI cameras. Firebase services such as user authentication, remote configuration, hosting, and NoSQL databases are also utilized.
 
-**3.** Frontend: A cross-platform application developed with Flutter for Android and iOS devices. It serves as an interface for school staff to receive notifications, review video clips, and manage settings.
+**2.** Frontend: A cross-platform application developed with Flutter for Android and iOS devices. It serves as an interface for school staff to receive notifications, review video clips, and manage settings.
 
-**4.** Notification System: Responsible for sending real-time alerts to relevant parties, including school staff and security personnel, when violent behavior is detected. It leverages push notifications, email, and SMS for communication.
+**3.** Notification System: Responsible for sending real-time alerts to relevant parties, including school staff and security personnel, when violent behavior is detected. It leverages push notifications, email, and SMS for communication.
 
-**5.** Direct Visual Classification of Uncertain Violent Behaviors: Manual classification to further train the model, reducing false positives and improving accuracy. This process adheres to security and privacy regulations.
+**4.** Direct Visual Classification of Uncertain Violent Behaviors: Manual classification to further train the model, reducing false positives and improving accuracy. This process adheres to security and privacy regulations.
 
-**6.** Security and Privacy: Throughout the architecture, we implement security measures, such as encryption, access controls, and adherence to data protection regulations, to ensure the privacy and security of students and teachers.
+**5.** Security and Privacy: Throughout the architecture, we implement security measures, such as encryption, access controls, and adherence to data protection regulations, to ensure the privacy and security of students and teachers.
 
 ***
 
@@ -82,26 +105,73 @@ Function of the website:
 
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
-## 5. Solution Demo
+# Solution Demo
 
 https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-b0af-9e7b1c4d9fc9.mp4
 
 ***
 
-## 6. The future and next steps for our ClassGuard project involve several aspects:
+# The future and next steps for our ClassGuard project involve several aspects
 
-**5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
+**6.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
 
-**5.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
+**6.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
 
-**5.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
+**6.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
 
-**5.4** Strengthening collaborations: Partner with educational organizations, local authorities, and law enforcement agencies to raise awareness about our solution and its benefits. This also helps us better understand their needs and requirements.
+**6.4** Strengthening collaborations: Partner with educational organizations, local authorities, and law enforcement agencies to raise awareness about our solution and its benefits. This also helps us better understand their needs and requirements.
 
-**5.5** International expansion: Develop a strategy to expand the solution to international markets, considering factors such as language support, cultural differences, and regulatory compliance.
+**6.5** International expansion: Develop a strategy to expand the solution to international markets, considering factors such as language support, cultural differences, and regulatory compliance.
 
-**5.6** ClassGuard's technical architecture, as it stands, can support scaling to a larger audience with minor changes:
+**6.6** ClassGuard's technical architecture, as it stands, can support scaling to a larger audience with minor changes:
 
-**5.6.1** Backend infrastructure: Provide a multi-tenant solution to configure for each educational organization. Provide auto-scaling capabilities to meet increased demand, ensuring high availability and performance.
+**6.6.1** Backend infrastructure: Provide a multi-tenant solution to configure for each educational organization. Provide auto-scaling capabilities to meet increased demand, ensuring high availability and performance.
 
-**5.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
+**6.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
+
+
+# 7. ClassGuard Web
+The gateway dashboard web help administrators manage your organization.
+
+This project is open-source, you can use our system or self-host for your organization.
+
+You can use our product in here: **[solutionchallengehumg2023.web.app](solutionchallengehumg2023.web.app)**
+
+## Main feature
+### Admin
+* Manage your account
+    * account management ✔
+    * Modify information of your account ❌ (coming soon)
+* user management
+    * Update, Delete user ✔
+    * manage posts, like, dislike, comment, user ✔
+
+
+### User
+
+* create account, create post, like, dislike, comment ✔
+* share, chat ❌ (coming soon)
+ 
+ 
+## Main UI
+### Admin UI
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477704-5dd3d6d1-9011-49d7-9a21-75fff4f8595d.png">
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477892-6c04fedf-b886-4016-a332-b9e8949b09ee.png">
+
+### User UI
+<img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229478046-15b590d4-2fbf-4cc8-9cfe-c6fe57560477.png">
+
+# How to use
+## With self-host
+### Development
+First you need to clone this project to your local machine, and you should have register a firebase project and create web, you can follow this [link]( https://firebase.google.com/docs/web/setup?authuser=0&hl=en)
+
+```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
+
+After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_web```
+
+Let's run the project!!!🤩🤩
+```npm start```
+
+
+
