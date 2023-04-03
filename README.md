@@ -1,8 +1,8 @@
 
 # Table of Contents
-- [Challenge](#Challenge)
-- [What does our solution solve?](#What-does-our-solution-solve?)
-- [ What can our system do?](#What-can-our-system-do?)
+- [Challenge](#1.-Challenge)
+- [What does our solution solve?](#2.-What-does-our-solution-solve?)
+- [ What can our system do?](#3.-What-can-our-system-do?)
   - [Data Analysis](#data-analysis)
 - [Results](#results)
 - [Discussion](#discussion)
