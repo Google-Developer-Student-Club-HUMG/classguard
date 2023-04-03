@@ -8,8 +8,11 @@
   - [Collect data and IoT/AI devices with cameras](#Implementation-ClassGuard-includes-3-main-components)
 - [5. Solution Demo](#Solution-Demo)
 - [6. The future and next steps for our ClassGuard project involve several aspects](#The-future-and-next-steps-for-our-ClassGuard-project-involve-several-aspects)
-
-
+- [7. ClassGuard Web](#ClassGuard-Web)
+  - [Main feature](#Main-feature)
+  - [Main UI](#Main-UI)
+  - [How to use](#How-to-use)
+ 
 ***
 
 # Challenge
@@ -136,7 +139,9 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
     * Update, Delete user ✔
     * manage posts, like, dislike, comment, user ✔
 
+
 ### User
+
 * create account, create post, like, dislike, comment ✔
 * share, chat ❌ (coming soon)
  
@@ -145,6 +150,7 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
 ### Admin UI
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477704-5dd3d6d1-9011-49d7-9a21-75fff4f8595d.png">
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477892-6c04fedf-b886-4016-a332-b9e8949b09ee.png">
+
 ### User UI
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229478046-15b590d4-2fbf-4cc8-9cfe-c6fe57560477.png">
 
