@@ -1,8 +1,49 @@
+@import "https://fonts.googleapis.com/css?family=Playfair+Display:400,700i,900i";
 .Login {
+  $green: #7ceaa4;
+  $purple: #3b3d54;
+
   display: grid;
   place-items: center;
   height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  .wrap {
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    .svg {
+      stroke: $green;
+      position: absolute;
+      bottom: -20vh;
+      transform-style: preserve-3d;
+    }
+    $total: 10;
+    @for $i from 1 through $total {
+      $scale: random(2) - 0.4;
+      .svg:nth-child(#{$i}) {
+        left: random(100) * 1% - 20;
+        animation: raise#{$i} 6 + random(15) + s linear infinite;
+        animation-delay: random(5) - 5 + s;
+        transform: scale(0.3 * $i - 0.6) rotate(random(360) + deg);
+        z-index: $i - 7;
+        filter: blur($i - 6 + px);
+
+        @keyframes raise#{$i} {
+          to {
+            bottom: 150vh;
+            transform: scale(0.3 * $i - 0.6) rotate(random(360) + deg);
+          }
+        }
+      }
+    }
+  }
+
   .form_container {
+    position: absolute;
+    z-index: 10000000;
     width: fit-content;
     height: fit-content;
     display: flex;
@@ -139,7 +180,6 @@
     background-color: #ffffff;
     border: 3px solid #115dfc;
     transition: 0.5s;
-   
   }
   .sign_in {
     display: flex;

@@ -99,6 +99,7 @@ function Register() {
   };
   return (
     <div className="register">
+      
       {/* error */}
       {setError}
       {/* error */}
