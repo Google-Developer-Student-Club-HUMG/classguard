@@ -1,17 +1,15 @@
 
 # Table of Contents
-- [Challenge](##1.-Challenge)
-- [What does our solution solve?](##2.-What-does-our-solution-solve?)
-- [ What can our system do?](##3.-What-can-our-system-do?)
-  - [Data Analysis](#data-analysis)
-- [Results](#results)
-- [Discussion](#discussion)
-- [Conclusion](#conclusion)
+- [Challenge](#1.-Challenge)
+- [What does our solution solve?](#2.-What-does-our-solution-solve?)
+- [ What can our system do?](#3.-What-can-our-system-do?)
+ 
 
 
 
+***
 
-## 1. Challenge
+# 1. Challenge
 
 In many countries, a significant percentage of students report experiencing bullying in school. 
 For example, in one survey, over one-third of students in 39 countries reported being bullied in the past month.
@@ -27,7 +25,7 @@ For example, in one survey, physical fighting was more common in African and Eas
 while bullying was more common in European and Western Pacific countries.
 
 ***
-## 2. What does our solution solve?
+# 2. What does our solution solve?
 Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
 <h5><b>Goal 1:</b></h5>
@@ -50,12 +48,13 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 ***
 
-## 3. What can our system do?
+# 3. What can our system do?
+
 **3.1** Our solution is to develop a system called ClassGuard - an IoT-based timely warning system for schools to be alerted of ongoing violent behaviors in classrooms and other areas that require monitoring. The main objectives of this system are to protect and supervise classrooms, prevent violent behaviors, and ensure the safety, security, and privacy of both students and teachers.
 
 **3.2** ClassGuard uses artificial intelligence (AI) to detect and monitor violent behaviors in classrooms and other monitored areas. The system automatically extracts video clips featuring violent actions detected by AI. These clips are then visually analyzed to confirm and classify ambiguous violent behaviors. This process helps improve the accuracy of the AI model and system by continuously collecting additional data and training. This solution aims to quickly identify and alert cases of violence requiring intervention while minimizing false alarms and optimizing the system's accuracy.
 
-## 4. Implementation ClassGuard includes 3 main components: 
+# 4. Implementation ClassGuard includes 3 main components: 
 
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 
@@ -91,30 +90,30 @@ Function of the website:
 
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
-## 5. Solution Demo
+# 5. Solution Demo
 
 https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-b0af-9e7b1c4d9fc9.mp4
 
 ***
 
-## 6. The future and next steps for our ClassGuard project involve several aspects:
+# 6. The future and next steps for our ClassGuard project involve several aspects:
 
-**5.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
+**6.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
 
-**5.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
+**6.2** Software upgrade for AI Camera: Update the AI model and firmware remotely over the internet.
 
-**5.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
+**6.3** Customization: Adjust the solution to cater to the unique requirements of different educational organizations, such as customizing detection algorithms for different age groups or cultural contexts.
 
-**5.4** Strengthening collaborations: Partner with educational organizations, local authorities, and law enforcement agencies to raise awareness about our solution and its benefits. This also helps us better understand their needs and requirements.
+**6.4** Strengthening collaborations: Partner with educational organizations, local authorities, and law enforcement agencies to raise awareness about our solution and its benefits. This also helps us better understand their needs and requirements.
 
-**5.5** International expansion: Develop a strategy to expand the solution to international markets, considering factors such as language support, cultural differences, and regulatory compliance.
+**6.5** International expansion: Develop a strategy to expand the solution to international markets, considering factors such as language support, cultural differences, and regulatory compliance.
 
-**5.6** ClassGuard's technical architecture, as it stands, can support scaling to a larger audience with minor changes:
+**6.6** ClassGuard's technical architecture, as it stands, can support scaling to a larger audience with minor changes:
 
-**5.6.1** Backend infrastructure: Provide a multi-tenant solution to configure for each educational organization. Provide auto-scaling capabilities to meet increased demand, ensuring high availability and performance.
+**6.6.1** Backend infrastructure: Provide a multi-tenant solution to configure for each educational organization. Provide auto-scaling capabilities to meet increased demand, ensuring high availability and performance.
 
-**5.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
+**6.6.2** Frontend optimization: Optimize the frontend application to handle more concurrent users by implementing efficient data fetching techniques and caching mechanisms.
 
 
-## 6. 
+# 7. 
 
