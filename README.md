@@ -146,11 +146,14 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 
 
 # ClassGuard Web
+<<<<<<< HEAD
 The gateway dashboard web help administrators manage your organization.
 
 This project is open-source, you can use our system or self-host for your organization.
 
 You can use our product in here: **[solutionchallengehumg2023.web.app](solutionchallengehumg2023.web.app)**
+=======
+>>>>>>> 8df71a1a4ea97078a74306931b7fd46d1414556c
 
 ## Main feature
 ### Admin
@@ -187,6 +190,18 @@ After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_web``
 
 Let's run the project!!!🤩🤩
 ```npm start```
+
+**admin account:**
+
+email:
+```Admin@gmail.com```
+password:
+```admin123456```
+
+**user account:**
+Please create your own user account <3
+
+
 
 
 
