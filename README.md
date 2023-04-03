@@ -1,10 +1,11 @@
 
 # Table of Contents
-- [Challenge](#Challenge)
-- [What does our solution solve?](#What-does-our-solution-solve)
-- [ What can our system do?](#What-can-our-system-do?)
- 
-
+- [1. Challenge](#Challenge)
+- [2. What does our solution solve?](#What-does-our-solution-solve)
+- [3. What can our system do?](#What-can-our-system-do)
+- [4. Implementation ClassGuard includes 3 main components](#Implementation-ClassGuard-includes-3-main-components)
+- [5. Solution Demo](#Solution-Demo)
+- [6. The future and next steps for our ClassGuard project involve several aspects](#The-future-and-next-steps-for-our-ClassGuard-project-involve-several-aspects)
 
 
 ***
@@ -48,13 +49,13 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 ***
 
-# What can our system do?
+# What can our system do
 
 **3.1** Our solution is to develop a system called ClassGuard - an IoT-based timely warning system for schools to be alerted of ongoing violent behaviors in classrooms and other areas that require monitoring. The main objectives of this system are to protect and supervise classrooms, prevent violent behaviors, and ensure the safety, security, and privacy of both students and teachers.
 
 **3.2** ClassGuard uses artificial intelligence (AI) to detect and monitor violent behaviors in classrooms and other monitored areas. The system automatically extracts video clips featuring violent actions detected by AI. These clips are then visually analyzed to confirm and classify ambiguous violent behaviors. This process helps improve the accuracy of the AI model and system by continuously collecting additional data and training. This solution aims to quickly identify and alert cases of violence requiring intervention while minimizing false alarms and optimizing the system's accuracy.
 
-# 4. Implementation ClassGuard includes 3 main components: 
+# Implementation ClassGuard includes 3 main components
 
 Our team has chosen a multi-tiered architecture for the ClassGuard solution, which consists of the following high-level components:
 
@@ -90,13 +91,13 @@ Function of the website:
 
  **Storage:** here we store user's image, video post, avatar for retrieval when needed
 
-# 5. Solution Demo
+# Solution Demo
 
 https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-b0af-9e7b1c4d9fc9.mp4
 
 ***
 
-# 6. The future and next steps for our ClassGuard project involve several aspects:
+# The future and next steps for our ClassGuard project involve several aspects
 
 **6.1** Model improvement: Continuously train and refine the AI model to increase accuracy in detecting violent behavior, while minimizing false alerts.
 
