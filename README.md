@@ -1,5 +1,5 @@
 
-<img style="width: 300px, height:300px" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
+<img style="width:40%" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
 
 # Table of Contents
 - [1. Challenge](#challenge)
@@ -99,7 +99,7 @@ This layer includes IoT devices such as cameras and microphones installed in cla
 
 Our backend uses Firebase to store data about violence
 
-_Function of the website:
+_Function of the website:_
 
  **Authentication:** Email and password based authentication, Google, Facebook, GitHub.
 
