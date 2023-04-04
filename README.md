@@ -1,6 +1,5 @@
-<div style="margin-left:10%">
+
 <img src="https://user-images.githubusercontent.com/94677059/229684063-1177cd56-d121-4230-ae9a-16f748157c88.png">
-</div>
 
 # Table of Contents
 - [1. Challenge](#challenge)
@@ -109,6 +108,8 @@ _Function of the website:_
  **Storage:** Here we store images, video posts, user avatars and cameras for retrieval when needed.
 
 **Realtime Database:** We store data about violent behavior for retrieval when needed.
+
+<img src="https://user-images.githubusercontent.com/94677059/229684661-011c8867-da6c-4e29-9d91-aff1d63871a0.png">
 
 # Solution Demo
 
