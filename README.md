@@ -1,5 +1,5 @@
 <div style="display:flex; justify-content: center">
-<img style="width:40%" src="https://user-images.githubusercontent.com/94677059/229684063-1177cd56-d121-4230-ae9a-16f748157c88.png">
+<img src="https://user-images.githubusercontent.com/94677059/229684063-1177cd56-d121-4230-ae9a-16f748157c88.png">
 </div>
 
 # Table of Contents
