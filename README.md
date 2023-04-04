@@ -1,25 +1,23 @@
 
 # Table of Contents
-<<<<<<< HEAD
-- [Table of Contents](#table-of-contents)
-- [Challenge](#challenge)
-- [What does our solution solve](#what-does-our-solution-solve)
-- [What can our system do](#what-can-our-system-do)
-- [Implementation ClassGuard includes 3 main components](#implementation-classguard-includes-3-main-components)
-  - [High\_level components](#high_level-components)
-  - [Collect data and IoT/AI devices with cameras](#collect-data-and-iotai-devices-with-cameras)
-- [Solution Demo](#solution-demo)
-- [The future and next steps for our ClassGuard project involve several aspects](#the-future-and-next-steps-for-our-classguard-project-involve-several-aspects)
-- [7. ClassGuard Web](#7-classguard-web)
-  - [Main feature](#main-feature)
-    - [Admin](#admin)
-    - [User](#user)
-  - [Main UI](#main-ui)
-    - [Admin UI](#admin-ui)
-    - [User UI](#user-ui)
-- [How to use](#how-to-use)
-  - [With self-host](#with-self-host)
-    - [Development](#development)
+- [1. Challenge](#challenge)
+- [2. What does our solution solve](#what-does-our-solution-solve)
+- [3. What can our system do](#what-can-our-system-do)
+- [4. Implementation ClassGuard includes 3 main components](#implementation-classguard-includes-3-main-components)
+  - [4.1 High\_level components](#high_level-components)
+  - [4.2 Collect data and IoT/AI devices with cameras](#collect-data-and-iotai-devices-with-cameras)
+- [5. Solution Demo](#solution-demo)
+- [6. The future and next steps for our ClassGuard project involve several aspects](#the-future-and-next-steps-for-our-classguard-project-involve-several-aspects)
+- [7. ClassGuard Web](#classguard-web)
+  - [7.1 Main feature](#main-feature)
+    - [7.1.1 Admin](#admin)
+    - [7.1.2 User](#user)
+  - [7.2 Main UI](#main-ui)
+    - [7.2.1 Admin UI](#admin-ui)
+    - [7.2.2 User UI](#user-ui)
+- [8. How to use](#how-to-use)
+  - [8.1 With self-host](#with-self-host)
+    - [8.1.1  Development](#development)
 =======
 - [1. Challenge](#Challenge)
 - [2. What does our solution solve?](#What-does-our-solution-solve)
@@ -33,7 +31,7 @@
   - [Main feature](#Main-feature)
   - [Main UI](#Main-UI)
   - [How to use](#How-to-use)
->>>>>>> f96fc4d68ac83440b83f054d60008a8a12f41aad
+
  
 ***
 
@@ -146,14 +144,9 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 
 
 # ClassGuard Web
-<<<<<<< HEAD
-The gateway dashboard web help administrators manage your organization.
 
+The ClassGuard web help administrators manage your organization.
 This project is open-source, you can use our system or self-host for your organization.
-
-You can use our product in here: **[solutionchallengehumg2023.web.app](solutionchallengehumg2023.web.app)**
-=======
->>>>>>> 8df71a1a4ea97078a74306931b7fd46d1414556c
 
 ## Main feature
 ### Admin
@@ -164,13 +157,11 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
     * Update, Delete user ✔
     * manage posts, like, dislike, comment, user ✔
 
-
 ### User
 
 * create account, create post, like, dislike, comment ✔
 * share, chat ❌ (coming soon)
- 
- 
+  
 ## Main UI
 ### Admin UI
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229477704-5dd3d6d1-9011-49d7-9a21-75fff4f8595d.png">
@@ -182,7 +173,8 @@ You can use our product in here: **[solutionchallengehumg2023.web.app](solutionc
 # How to use
 ## With self-host
 ### Development
-First you need to clone this project to your local machine, and you should have register a firebase project and create web, you can follow this [link]( https://firebase.google.com/docs/web/setup?authuser=0&hl=en)
+
+Try our project
 
 ```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
 
