@@ -1,5 +1,5 @@
-<div style="width:100vw">
-<img style="width:40%; margin:0 auto" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
+<div style="display:flex; justify-content: center">
+<img style="width:40%" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
 </div>
 
 # Table of Contents
