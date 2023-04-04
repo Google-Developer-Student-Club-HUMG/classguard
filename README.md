@@ -1,4 +1,6 @@
 
+<img style="width: 300px, height:300px" src="https://user-images.githubusercontent.com/94677059/229193447-9ecc7d38-d026-45a6-8ef4-541372745671.png">
+
 # Table of Contents
 - [1. Challenge](#challenge)
 - [2. What does our solution solve](#what-does-our-solution-solve)
@@ -16,23 +18,8 @@
     - [7.2.1 Admin UI](#admin-ui)
     - [7.2.2 User UI](#user-ui)
 - [8. How to use](#how-to-use)
-  - [8.1 With self-host](#with-self-host)
-    - [8.1.1  Development](#development)
-=======
-- [1. Challenge](#Challenge)
-- [2. What does our solution solve?](#What-does-our-solution-solve)
-- [3. What can our system do?](#What-can-our-system-do)
-- [4. Implementation ClassGuard includes 3 main components](#Implementation-ClassGuard-includes-3-main-components)
-  - [High-level components](#high_level-components)
-  - [Collect data and IoT/AI devices with cameras](#Implementation-ClassGuard-includes-3-main-components)
-- [5. Solution Demo](#Solution-Demo)
-- [6. The future and next steps for our ClassGuard project involve several aspects](#The-future-and-next-steps-for-our-ClassGuard-project-involve-several-aspects)
-- [7. ClassGuard Web](#ClassGuard-Web)
-  - [Main feature](#Main-feature)
-  - [Main UI](#Main-UI)
-  - [How to use](#How-to-use)
-
- 
+   - [8.1  Development](#development)
+    - 
 ***
 
 # Challenge
@@ -104,19 +91,23 @@ This layer includes IoT devices such as cameras and microphones installed in cla
 
 ***
 
-<h3>*Technology used in the website*</h3>
+## Technology used in the website
 
 **Front-end:** Reactjs.
 
 **Back-end:** Firebase.
 
-Function of the website:
+Our backend uses Firebase to store data about violence
+
+_Function of the website:
 
  **Authentication:** Email and password based authentication, Google, Facebook, GitHub.
 
-**Cloud Firestore:** :we save user data after registration, Admin management, Posts(anonymous posts or no), Share in addition, we also save each user's posts and display from newest hottest to oldest
+**Cloud Firestore:** we save user data after registration, Admin management, Posts(anonymous posts or no), Share in addition, we also save each user's posts and display from newest hottest to oldest.
 
- **Storage:** here we store user's image, video post, avatar for retrieval when needed
+ **Storage:** Here we store images, video posts, user avatars and cameras for retrieval when needed.
+
+**Realtime Database:** We store data about violent behavior for retrieval when needed.
 
 # Solution Demo
 
@@ -171,8 +162,7 @@ This project is open-source, you can use our system or self-host for your organi
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229478046-15b590d4-2fbf-4cc8-9cfe-c6fe57560477.png">
 
 # How to use
-## With self-host
-### Development
+## Development
 
 Try our project
 
