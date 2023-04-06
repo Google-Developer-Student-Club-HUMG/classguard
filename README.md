@@ -38,7 +38,7 @@ For example, in one survey, physical fighting was more common in African and Eas
 while bullying was more common in European and Western Pacific countries.
 
 ***
-# What does our solution solve
+# What does our solution solve?
 Preventing school violence solves many of the United Nations' Sustainable Development Goals
 
 <h5><b>Goal 1:</b></h5>
@@ -61,7 +61,7 @@ Reduce Inequality - Preventing school violence is one way to reduce inequality i
 
 ***
 
-# What can our system do
+# What can our system do?
 
 **3.1** Our solution is to develop a system called ClassGuard - an IoT-based timely warning system for schools to be alerted of ongoing violent behaviors in classrooms and other areas that require monitoring. The main objectives of this system are to protect and supervise classrooms, prevent violent behaviors, and ensure the safety, security, and privacy of both students and teachers.
 
