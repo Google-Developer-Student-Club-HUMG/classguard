@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-
+import 'package:firebase_core/firebase_core.dart';
 import 'sc_view.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+
   runApp(const MyApp());
 }
 
@@ -18,11 +21,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'ClassGuard',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Violence Detect App'),
     );
   }
 }
@@ -47,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            
             ElevatedButton.icon(
               onPressed: () => Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) {

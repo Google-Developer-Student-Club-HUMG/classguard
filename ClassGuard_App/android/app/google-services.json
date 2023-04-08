@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "96138120905",
+    "project_id": "solutionchallengehumg2023",
+    "storage_bucket": "solutionchallengehumg2023.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96138120905:android:ea33e391466b6abbc9c718",
+        "android_client_info": {
+          "package_name": "com.example.mvc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96138120905-a20sh13c1io0l0vi66d68mpmfnpra1oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvOHmlgmp7c3WggLNO6caLzdcGddYjafU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96138120905-7p37eff5adjbgb0dnuhdoeo49pkdmssl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

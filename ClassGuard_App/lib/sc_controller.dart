@@ -1,11 +1,11 @@
 import 'dart:math';
 import 'dart:ui';
-
+import 'package:firebase_database/firebase_database.dart';
 import 'package:camera/camera.dart';
 import 'package:flutter/foundation.dart';
 import 'package:tflite_flutter/tflite_flutter.dart';
 import 'package:tflite_flutter_helper/tflite_flutter_helper.dart';
-
+import 'dart:core';
 import 'sc_model.dart';
 import 'utils/image_utils.dart';
 
@@ -120,6 +120,17 @@ class SafeClassController with ChangeNotifier {
     _interpreter?.run(tensorImage.buffer, _outputBuffer!.getBuffer());
     var prediction = _outputBuffer!.getDoubleList().first;
     var object = ViolenceDetection(score: prediction, box: Rect.zero);
+
+    final databaseRef = FirebaseDatabase.instance.reference();
+    DatabaseReference timesRef = databaseRef.child('time');
+    DateTime currentTime = DateTime.now();
+
+    if (prediction > 0.5) {
+      String currentTimeString = currentTime.toString();
+      DatabaseReference newTimeRef = timesRef.push();
+      newTimeRef.set(currentTimeString);
+    }
+
     SafeClassModel().addObject(object);
     notifyListeners();
   }

@@ -19,7 +19,7 @@ class ResultView extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            'Kết quả phát hiện:',
+            'Detect Result:',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 20,
@@ -44,7 +44,7 @@ class ResultView extends StatelessWidget {
                         ),
                       ),
                       Text(
-                        'Độ chính xác: ${(obj.score * 100).toStringAsFixed(2)}%',
+                        'Accuracy: ${(obj.score * 100).toStringAsFixed(2)}%',
                         style: const TextStyle(fontSize: 12),
                       ),
                     ],

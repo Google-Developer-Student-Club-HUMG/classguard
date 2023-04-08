@@ -38,11 +38,13 @@ class _SafeClassViewState extends State<SafeClassView> {
     super.dispose();
   }
 
+
+
   Future<dynamic> _initializeCamera() async {
     try {
       final cameras = await availableCameras();
       final cameraController =
-          CameraController(cameras.first, ResolutionPreset.high);
+          CameraController(cameras.first, ResolutionPreset.low);
       await cameraController.initialize();
       cameraController.startImageStream((CameraImage image) {
         controller.detectObjects(image);

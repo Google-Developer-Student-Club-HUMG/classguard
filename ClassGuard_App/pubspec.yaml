@@ -40,7 +40,10 @@ dependencies:
   # path_provider: ^2.0.14
   tflite_flutter: ^0.9.0
   tflite_flutter_helper: ^0.2.1
-  
+  firebase_core: ^1.10.0
+  firebase_database: ^8.1.4
+  firebase_auth: ^3.3.0
+  firebase_core_platform_interface: 4.5.1
 
 dev_dependencies:
   flutter_test:

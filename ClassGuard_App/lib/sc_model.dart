@@ -1,5 +1,6 @@
 import 'dart:collection';
 import 'dart:ui';
+import 'package:firebase_database/firebase_database.dart';
 
 /// Lớp SafeClassModel lưu trữ danh sách các đối tượng
 /// ViolenceDetection phát hiện được trong quá trình phân tích video.
@@ -24,13 +25,15 @@ class SafeClassModel {
     }
   }
 
+  final databaseRef = FirebaseDatabase.instance.reference();
+
   bool hasViolenceDetection() {
     return objects.any((detection) => detection.score > 0.5);
   }
 
   String get label => hasViolenceDetection()
-      ? 'Bạo lực đã được phát hiện'
-      : 'Không phát hiện bạo lực';
+      ? 'Violence Dectected'
+      : 'Nonviolence Detected';
 }
 
 /// Đại diện cho một đối tượng bạo lực phát hiện được
@@ -45,6 +48,8 @@ class ViolenceDetection {
     required this.score,
     required this.box,
   });
+
+  
 
   /// Trả về một chuỗi mô tả cho kết quả phát hiện.
   String get label =>
