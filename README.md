@@ -168,9 +168,16 @@ This project is open-source, you can use our system or self-host for your organi
 
 Try our project
 
-```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
 
-After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_web```
+```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
+#1,Run the app:
+```cd ClassGuard_App```
+and
+```flutter run```
+
+you need some configs to see the result with Firebase realtime databases, we will update the guide as soon as possible.
+
+After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_Web```
 
 Let's run the project!!!🤩🤩
 ```npm start```
