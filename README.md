@@ -170,6 +170,7 @@ Try our project
 
 
 ```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
+
 #1,Run the app:
 ```cd ClassGuard_App```
 and
@@ -177,6 +178,7 @@ and
 
 you need some configs to see the result with Firebase realtime databases, we will update the guide as soon as possible.
 
+#2, With the web
 After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_Web```
 
 Let's run the project!!!🤩🤩
