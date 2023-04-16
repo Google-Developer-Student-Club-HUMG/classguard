@@ -19,7 +19,6 @@
     - [7.2.2 User UI](#user-ui)
 - [8. How to use](#how-to-use)
    - [8.1  Development](#development)
-    - 
 ***
 
 # Challenge
