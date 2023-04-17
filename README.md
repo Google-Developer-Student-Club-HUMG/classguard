@@ -137,22 +137,9 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 
 # ClassGuard Web
 
-The ClassGuard web help administrators manage your organization.
-This project is open-source, you can use our system or self-host for your organization.
+School violence is not only in the form of behavior but also psychological harm.
+So ClassGuard comes with a website where student can share their feeling or help others in case being bulled.
 
-## Main feature
-### Admin
-* Manage your account
-    * account management ✔
-    * Modify information of your account ❌ (coming soon)
-* user management
-    * Update, Delete user ✔
-    * manage posts, like, dislike, comment, user ✔
-
-### User
-
-* create account, create post, like, dislike, comment ✔
-* share, chat ❌ (coming soon)
   
 ## Main UI
 ### Admin UI
