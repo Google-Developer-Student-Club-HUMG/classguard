@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'sc_view.dart';
+import 'package:carousel_slider/carousel_slider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -21,11 +22,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'ClassGuard',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.green,
       ),
-      home: const MyHomePage(title: 'Violence Detect App'),
+      home: const MyHomePage(title: 'ClassGuard'),
     );
   }
 }
@@ -48,10 +50,19 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
         child: Column(
+        
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
+            Container(
+              margin: EdgeInsets.only(top: 32.0, bottom:  70),
+              child: Image(
+                  image: AssetImage("assets/img/logo_gdsc_humg.png"),
+                  width: 300,),
+            ),
             
-            ElevatedButton.icon(
+            Container(
+              margin: EdgeInsets.only(top: 10),
+              child: ElevatedButton.icon(
               onPressed: () => Navigator.of(context).push(MaterialPageRoute(
                 builder: (context) {
                   return const SafeClassView();
@@ -59,6 +70,7 @@ class _MyHomePageState extends State<MyHomePage> {
               )),
               icon: const Icon(Icons.camera_alt_outlined),
               label: const Text('Start camera'),
+            ),
             )
           ],
         ),
