@@ -19,7 +19,6 @@
     - [7.2.2 User UI](#user-ui)
 - [8. How to use](#how-to-use)
    - [8.1  Development](#development)
-    - 
 ***
 
 # Challenge
@@ -138,22 +137,9 @@ https://user-images.githubusercontent.com/94677059/229193863-bf07653a-271c-4391-
 
 # ClassGuard Web
 
-The ClassGuard web help administrators manage your organization.
-This project is open-source, you can use our system or self-host for your organization.
+School violence is not only in the form of behavior but also psychological harm.
+So ClassGuard comes with a website where student can share their feeling or help others in case being bulled.
 
-## Main feature
-### Admin
-* Manage your account
-    * account management ✔
-    * Modify information of your account ❌ (coming soon)
-* user management
-    * Update, Delete user ✔
-    * manage posts, like, dislike, comment, user ✔
-
-### User
-
-* create account, create post, like, dislike, comment ✔
-* share, chat ❌ (coming soon)
   
 ## Main UI
 ### Admin UI
@@ -168,9 +154,18 @@ This project is open-source, you can use our system or self-host for your organi
 
 Try our project
 
+
 ```git clone https://github.com/Google-Developer-Student-Club-HUMG/classguard.git``` 
 
-After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_web```
+#1,Run the app:
+```cd ClassGuard_App```
+and
+```flutter run```
+
+you need some configs to see the result with Firebase realtime databases, we will update the guide as soon as possible.
+
+#2, With the web
+After you clone it, you point to the file ClassGuard_web: ```cd ClassGuard_Web```
 
 Let's run the project!!!🤩🤩
 ```npm start```
