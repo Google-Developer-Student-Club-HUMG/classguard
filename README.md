@@ -150,7 +150,6 @@ So ClassGuard comes with a website where student can share their feeling or help
 <img  style="align-items:center" src="https://user-images.githubusercontent.com/94677059/229478046-15b590d4-2fbf-4cc8-9cfe-c6fe57560477.png">
 
 # How to use
-## Development
 
 Try our project
 
