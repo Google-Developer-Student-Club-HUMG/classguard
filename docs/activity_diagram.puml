@@ -1,4 +1,4 @@
-@startuml Sơ đồ tuần tự
+@startuml Sequence Diagram
 actor User
 
 User -> ViewController: pressStartButton()
@@ -10,9 +10,9 @@ activate CameraController
 loop
     CameraController -> CameraController: captureFrame()
     activate CameraController
-    CameraController -> Model: detectObjects(frame)
+    CameraController -> Model: detectViolence(frame)
     activate Model
-    Model -> CameraController: objectsDetected(objects)
+    Model -> CameraController: ViolencesDetected(objects)
     deactivate Model
     CameraController -> ViewController: displayCamera(frame)
     activate ViewController
