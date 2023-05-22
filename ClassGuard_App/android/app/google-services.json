@@ -1,10 +1,69 @@
 {
   "project_info": {
     "project_number": "96138120905",
+    "firebase_url": "https://solutionchallengehumg2023-default-rtdb.firebaseio.com",
     "project_id": "solutionchallengehumg2023",
     "storage_bucket": "solutionchallengehumg2023.appspot.com"
   },
   "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96138120905:android:5d7545fcae6b71ddc9c718",
+        "android_client_info": {
+          "package_name": "com.app.t"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96138120905-a20sh13c1io0l0vi66d68mpmfnpra1oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvOHmlgmp7c3WggLNO6caLzdcGddYjafU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96138120905-7p37eff5adjbgb0dnuhdoeo49pkdmssl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96138120905:android:3d5ec1166d12a7fac9c718",
+        "android_client_info": {
+          "package_name": "com.example.classguard"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96138120905-a20sh13c1io0l0vi66d68mpmfnpra1oh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvOHmlgmp7c3WggLNO6caLzdcGddYjafU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "96138120905-7p37eff5adjbgb0dnuhdoeo49pkdmssl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
     {
       "client_info": {
         "mobilesdk_app_id": "1:96138120905:android:ea33e391466b6abbc9c718",

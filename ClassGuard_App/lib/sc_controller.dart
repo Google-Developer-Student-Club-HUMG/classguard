@@ -8,6 +8,8 @@ import 'package:tflite_flutter_helper/tflite_flutter_helper.dart';
 import 'dart:core';
 import 'sc_model.dart';
 import 'utils/image_utils.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'dart:async';
 
 /// Lớp SafeClassController điều khiển việc phân tích video và
 /// cập nhật danh sách các đối tượng phát hiện được trong SafeClassModel.
@@ -68,6 +70,7 @@ import 'utils/image_utils.dart';
 ///   }
 /// }
 /// ```
+///
 class SafeClassController with ChangeNotifier {
   SafeClassController._({String modelFileName = 'model_optimized.tflite'}) {
     loadModel(modelFileName);
@@ -104,6 +107,9 @@ class SafeClassController with ChangeNotifier {
     _inputWidth = inputShape[2];
   }
 
+  final databaseRef = FirebaseDatabase.instance.reference();
+  DateTime lastRecordedTime = DateTime.now().subtract(Duration(seconds: 1));
+
   /// Phân tích cameraImage để phát hiện bạo lực.
   Future detectObjects(CameraImage cameraImage) async {
     if (_interpreter == null) return;
@@ -121,14 +127,18 @@ class SafeClassController with ChangeNotifier {
     var prediction = _outputBuffer!.getDoubleList().first;
     var object = ViolenceDetection(score: prediction, box: Rect.zero);
 
-    final databaseRef = FirebaseDatabase.instance.reference();
-    DatabaseReference timesRef = databaseRef.child('time');
-    DateTime currentTime = DateTime.now();
+    // DateTime lastRecordedTime = DateTime.now().subtract(Duration(seconds: 2));
+    DatabaseReference timesRef = databaseRef.child('D101');
 
     if (prediction > 0.5) {
-      String currentTimeString = currentTime.toString();
-      DatabaseReference newTimeRef = timesRef.push();
-      newTimeRef.set(currentTimeString);
+      if (DateTime.now().difference(lastRecordedTime).inSeconds >= 1) {
+        String recordTime = lastRecordedTime.toString();
+        DatabaseReference newTimeRef = timesRef.push();
+        newTimeRef.set(recordTime);
+        print(lastRecordedTime);
+        print(prediction);
+        lastRecordedTime = DateTime.now();
+      }
     }
 
     SafeClassModel().addObject(object);

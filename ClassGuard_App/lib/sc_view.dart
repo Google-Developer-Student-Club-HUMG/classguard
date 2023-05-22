@@ -1,9 +1,10 @@
 import 'package:camera/camera.dart';
 import 'package:flutter/material.dart';
-
+import 'package:firebase_storage/firebase_storage.dart';
 import 'result_view.dart';
 import 'sc_controller.dart';
 import 'sc_model.dart';
+import 'dart:io';
 
 /// Lớp SafeClassView
 ///
@@ -49,6 +50,7 @@ class _SafeClassViewState extends State<SafeClassView> {
       cameraController.startImageStream((CameraImage image) {
         controller.detectObjects(image);
       });
+      
       return cameraController;
     } catch (e) {
       return e;

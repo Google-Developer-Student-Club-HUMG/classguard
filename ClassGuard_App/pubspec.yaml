@@ -1,4 +1,4 @@
-name: mvc
+name: classguard
 description: A new Flutter project.
 
 publish_to: 'none'
@@ -21,8 +21,11 @@ dependencies:
   firebase_core: ^1.10.0
   firebase_database: ^8.1.4
   firebase_auth: ^3.3.0
+  firebase_storage: ^10.0.2
   firebase_core_platform_interface: 4.5.1
   carousel_slider: ^4.2.1
+  firebase_messaging: ^13.1.0
+  audioplayers:
 
 dev_dependencies:
   flutter_test:
