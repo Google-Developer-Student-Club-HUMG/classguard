@@ -1,11 +1,14 @@
 import tensorflow as tf
 import cv2
+import numpy as np
 
 # Load the video
 cap = cv2.VideoCapture(0)
+ 
+# cap = cv2.VideoCapture("videos/nonv.mp4")
 
 # Load the trained model
-model = tf.keras.models.load_model('model/model.h5')
+model = tf.keras.models.load_model('model/modelnew.h5')
 
 # Loop through the video frames
 while(cap.isOpened()):
@@ -28,7 +31,7 @@ while(cap.isOpened()):
         if(prediction > 0.5):
             cv2.putText(frame1, "Phat hien bao luc", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
         else:
-            cv2.putText(frame1, "Khong phat hien bao luc", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+            cv2.putText(frame1, "Khong phat hien bao luc", (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
         # Display the frame
         cv2.imshow("Test", frame1)

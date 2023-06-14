@@ -25,7 +25,7 @@ dependencies:
   firebase_core_platform_interface: 4.5.1
   carousel_slider: ^4.2.1
   firebase_messaging: ^13.1.0
-  audioplayers:
+  image_picker:
 
 dev_dependencies:
   flutter_test:

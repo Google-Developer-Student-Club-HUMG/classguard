@@ -5,6 +5,7 @@ import 'package:carousel_slider/carousel_slider.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  
   await Firebase.initializeApp();
 
   runApp(const MyApp());

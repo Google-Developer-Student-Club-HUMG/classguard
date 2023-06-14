@@ -8,8 +8,7 @@ import 'package:tflite_flutter_helper/tflite_flutter_helper.dart';
 import 'dart:core';
 import 'sc_model.dart';
 import 'utils/image_utils.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
-import 'dart:async';
+import 'package:image_picker/image_picker.dart';
 
 /// Lớp SafeClassController điều khiển việc phân tích video và
 /// cập nhật danh sách các đối tượng phát hiện được trong SafeClassModel.
@@ -107,6 +106,7 @@ class SafeClassController with ChangeNotifier {
     _inputWidth = inputShape[2];
   }
 
+
   final databaseRef = FirebaseDatabase.instance.reference();
   DateTime lastRecordedTime = DateTime.now().subtract(Duration(seconds: 1));
 
@@ -128,7 +128,7 @@ class SafeClassController with ChangeNotifier {
     var object = ViolenceDetection(score: prediction, box: Rect.zero);
 
     // DateTime lastRecordedTime = DateTime.now().subtract(Duration(seconds: 2));
-    DatabaseReference timesRef = databaseRef.child('D101');
+    DatabaseReference timesRef = databaseRef.child('phong_bao_ve');
 
     if (prediction > 0.5) {
       if (DateTime.now().difference(lastRecordedTime).inSeconds >= 1) {
