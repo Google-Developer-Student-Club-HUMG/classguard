@@ -1,7 +1,7 @@
 import React from "react";
 import "./NavAdmin.scss";
 import { UilEstate, UilSignout, UilMoon } from "@iconscout/react-unicons";
-import { CameraOutlined } from "@ant-design/icons";
+import { CameraOutlined,AlertOutlined } from "@ant-design/icons";
 import { Modal } from "antd";
 import { Link } from "react-router-dom";
 
@@ -41,6 +41,14 @@ function NavAdmin(props) {
               <Link to="/admin/camera" style={{ display: 'flex' }}>
                 <CameraOutlined className="i" />
                 <p className="link-name">Camera</p>
+              </Link>
+            </span>
+          </li>
+          <li>
+            <span>
+              <Link to="/admin/alert" style={{ display: 'flex' }}>
+                <AlertOutlined className="i" />
+                <p className="link-name">Alert</p>
               </Link>
             </span>
           </li>

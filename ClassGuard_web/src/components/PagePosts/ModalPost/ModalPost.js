@@ -47,12 +47,14 @@ function ModalPost() {
   }, [imgPost]);
   //post
   const handlePost = async () => {
-    setLoadingModal(true);
     if (imgPost) {
+      setLoadingModal(true);
       const storageRef = ref(storage, "Posts/" + uuid());
       const uploadTask = uploadBytesResumable(storageRef, imgPost);
       uploadTask.on(
-        (error) => { },
+        (error) => { 
+          console.error("Error during upload:", error);
+        },
         () => {
           getDownloadURL(uploadTask.snapshot.ref).then(async (downloadURL) => {
             await addDoc(collection(db, "posts"), {
@@ -101,8 +103,8 @@ function ModalPost() {
     setValueInputPost("");
     setImgPost(null);
     setIsModalOpenThinking(false);
-    setLoadingModal(false);
     setShowEmojis(false);
+    setLoadingModal(false);
   };
   //removeImage
   const removeImage = () => {

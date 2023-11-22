@@ -65,7 +65,7 @@ function NavBar() {
         <div className="nav">
           <Link to="/">Home</Link>
           <Link to="/posts">Posts</Link>
-          <Link to="/Personal">Personal Page</Link>
+          {/* <Link to="/Personal">Personal Page</Link> */}
           <Link to="/contact">Contact</Link>
         </div>
         <div className="logOut" onClick={isModalOpenSignOut}>

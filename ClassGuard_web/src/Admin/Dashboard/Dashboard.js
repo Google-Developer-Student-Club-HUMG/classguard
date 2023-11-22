@@ -81,6 +81,7 @@ function Dashboard() {
     for (let i = 0; i < posts.length; i++) {
       onSnapshot(
         collection(db, "posts", posts[i].id, "comments"),
+        // eslint-disable-next-line no-loop-func
         (snapshot) => {
           sumCm += snapshot.docs.length;
           setCountComments(sumCm);
@@ -88,11 +89,13 @@ function Dashboard() {
       );
       onSnapshot(
         collection(db, "posts", posts[i].id, "dislikes"),
+        // eslint-disable-next-line no-loop-func
         (snapshot) => {
           sumDisLikes += snapshot.docs.length;
           setCountDisLikes(sumDisLikes);
         }
       );
+      // eslint-disable-next-line no-loop-func
       onSnapshot(collection(db, "posts", posts[i].id, "likes"), (snapshot) => {
         sumLikes += snapshot.docs.length;
         setCountLikes(sumLikes);

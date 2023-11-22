@@ -8,22 +8,24 @@ import PageContact from "./components/PageContact/PageContact";
 import Login from "./components/Authentication/Login/Login";
 import Register from "./components/Authentication/Register/Register";
 import Dashboard from "./Admin/Dashboard/Dashboard";
-import CameraAdmin from "./Admin/CameraAdmin/CameraAdmin";
+import AlertAdmin from "./Admin/Alert/Alert"
+import Camera from "./Admin/Camera/Camera";
 function App() {
   return (
     <div className="App">
       <ContextProivider>
-          <Routes>
-            <Route path="/register" element={<Register />} />
-            <Route path="/login" element={<Login />} />
-            <Route path="/" element={<PageHome />} />
-            <Route path="/posts" element={<PagePosts />} />
-            <Route path="/Personal" element={<PagePersonal />} />
-            <Route path="/contact" element={<PageContact />} />
-            {/* Admin */}
-            <Route path="/admin" element={<Dashboard />} />
-            <Route path="/admin/camera" element={<CameraAdmin />} />
-          </Routes>
+        <Routes>
+          <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<PageHome />} />
+          <Route path="/posts" element={<PagePosts />} />
+          {/* <Route path="/Personal" element={<PagePersonal />} /> */}
+          <Route path="/contact" element={<PageContact />} />
+          {/* Admin */}
+          <Route path="/admin" element={<Dashboard />} />
+          <Route path="/admin/camera" element={<Camera />} />
+          <Route path="/admin/alert" element={<AlertAdmin />} />
+        </Routes>
       </ContextProivider>
     </div>
   );
