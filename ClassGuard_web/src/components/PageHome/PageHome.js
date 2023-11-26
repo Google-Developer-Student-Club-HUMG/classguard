@@ -1,9 +1,9 @@
 import React from "react";
 import NavBar from "../Share/NavBar/NavBar";
-import SlideBanner from './SlideBanner/SlideBanner'
-import ModalPost from '../PagePosts/ModalPost/ModalPost'
+// import SlideBanner from './SlideBanner/SlideBanner'
+// import ModalPost from '../PagePosts/ModalPost/ModalPost'
 import PostHeader from './PostHeader/PostHeader';
-import PostsData from "../PagePosts/PostsData/PostsData";
+// import PostsData from "../PagePosts/PostsData/PostsData";
 import Footer from './Footer/Footer';
 import Posts from "./Posts/Posts";
 function PageHome() {

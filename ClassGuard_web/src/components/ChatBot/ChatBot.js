@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import '@chatscope/chat-ui-kit-styles/dist/default/styles.min.css';
 import {
   MainContainer,
@@ -8,10 +8,10 @@ import {
   MessageInput,
   TypingIndicator,
 } from '@chatscope/chat-ui-kit-react';
-import NavBar from '../Share/NavBar/NavBar';
-import Footer from '../PageHome/Footer/Footer';
+// import NavBar from '../Share/NavBar/NavBar';
+// import Footer from '../PageHome/Footer/Footer';
 
-const API_KEY = "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"
+const API_KEY = "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"
 
 const Chatbot = () => {
   const [messages, setMessages] = useState([
