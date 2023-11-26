@@ -2,8 +2,11 @@ import React from "react";
 import "./Camera.scss";
 // import { UilEstate } from "@iconscout/react-unicons";
 // import { Link } from "react-router-dom";
-import ReactPlayer from "react-player";
 import NavChildAdmin from "../NavChildAdmin/NavChildAdmin";
+import videoCam1 from './videoCamera/2845173717706552356.mp4'
+import videoCam2 from './videoCamera/3723935333074705340.mp4'
+import videoCam3 from './videoCamera/6982717536944840013.mp4'
+import videoCam4 from './videoCamera/video1.mp4'
 function Camera() {
   return (
     <div>
@@ -12,77 +15,29 @@ function Camera() {
       <div className="flex center">
         <div className="boxVideo">
           <div className="title">Camera 1</div>
-          <ReactPlayer
-            url="https://youtu.be/0-FqGnUDQUs"
-            width="450px"
-            height="280px"
-            playing={true}
-            loop={true}
-            controls={false}
-            muted={true}
-            style={{
-              backgroundColor: "#222",
-              borderRadius: "10px",
-              border: "2px solid #ccc",
-              padding: "10px",
-            }}
-          />
+          <video width="400" src={videoCam1} controls autoplay loop={true} muted>
+            Your browser does not support HTML video.
+          </video>
         </div>
         <div className="boxVideo">
           <div className="title">Camera 2</div>
-          <ReactPlayer
-            url="https://youtu.be/6Prys88XjAw"
-            width="450px"
-            height="280px"
-            playing={true}
-            loop={true}
-            controls={false}
-            muted={true}
-            style={{
-              backgroundColor: "#222",
-              borderRadius: "10px",
-              border: "2px solid #ccc",
-              padding: "10px",
-            }}
-          />
+          <video width="400" src={videoCam2} controls autoplay loop={true} muted>
+            Your browser does not support HTML video.
+          </video>
         </div>
       </div>
       <div className="flex center">
         <div className="boxVideo">
           <div className="title">Camera 3</div>
-          <ReactPlayer
-            url="https://youtu.be/hteWzlBzs74"
-            width="450px"
-            height="280px"
-            playing={true}
-            loop={true}
-            controls={false}
-            muted={true}
-            style={{
-              backgroundColor: "#222",
-              borderRadius: "10px",
-              border: "2px solid #ccc",
-              padding: "10px",
-            }}
-          />
+          <video width="400" src={videoCam3} controls autoplay loop={true} muted>
+            Your browser does not support HTML video.
+          </video>
         </div>
         <div className="boxVideo">
           <div className="title">Camera 4</div>
-          <ReactPlayer
-            url="https://youtu.be/If6pOnTkQbw"
-            width="450px"
-            height="280px"
-            playing={true}
-            loop={true}
-            controls={false}
-            muted={true}
-            style={{
-              backgroundColor: "#222",
-              borderRadius: "10px",
-              border: "2px solid #ccc",
-              padding: "10px",
-            }}
-          />
+          <video width="400" src={videoCam4} controls autoplay loop={true} muted>
+            Your browser does not support HTML video.
+          </video>
         </div>
       </div>
     </div>
