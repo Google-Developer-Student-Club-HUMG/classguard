@@ -26,6 +26,10 @@ function NavBar() {
       label: <Link to="/contact">Contact</Link>,
       key: "4",
     },
+    {
+      label: <Link to="/assistant">Assistant</Link>,
+      key: "5",
+    },
   ];
   // isModalOpenSignOut
   const isModalOpenSignOut = () => {
@@ -67,6 +71,7 @@ function NavBar() {
           <Link to="/posts">Posts</Link>
           {/* <Link to="/Personal">Personal Page</Link> */}
           <Link to="/contact">Contact</Link>
+          <Link to="/assistant">Assistant</Link>
         </div>
         <div className="logOut" onClick={isModalOpenSignOut}>
           <p className="btn btn-logOut">Sign out</p>

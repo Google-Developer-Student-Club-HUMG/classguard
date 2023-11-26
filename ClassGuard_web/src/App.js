@@ -10,6 +10,7 @@ import Register from "./components/Authentication/Register/Register";
 import Dashboard from "./Admin/Dashboard/Dashboard";
 import AlertAdmin from "./Admin/Alert/Alert"
 import Camera from "./Admin/Camera/Camera";
+import ChatBotPage from "./components/ChatBot/ChatBotPage";
 function App() {
   return (
     <div className="App">
@@ -25,6 +26,7 @@ function App() {
           <Route path="/admin" element={<Dashboard />} />
           <Route path="/admin/camera" element={<Camera />} />
           <Route path="/admin/alert" element={<AlertAdmin />} />
+          <Route path="/assistant" element={<ChatBotPage />} />
         </Routes>
       </ContextProivider>
     </div>
