@@ -1,0 +1,16 @@
+.ytp-show-cards-title {
+  display: none !important;
+  visibility: hidden;
+  opacity: 0;
+}
+.flex.center {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 60px;
+}
+.boxVideo {
+  .title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}

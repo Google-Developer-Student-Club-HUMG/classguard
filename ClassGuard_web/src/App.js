@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { ContextProivider } from "./Context/userContext";
 import PageHome from "./components/PageHome/PageHome";
 import PagePosts from "./components/PagePosts/PagePosts";
-import PagePersonal from "./components/PagePersonal/PagePersonal";
+// import PagePersonal from "./components/PagePersonal/PagePersonal";
 import PageContact from "./components/PageContact/PageContact";
 import Login from "./components/Authentication/Login/Login";
 import Register from "./components/Authentication/Register/Register";
