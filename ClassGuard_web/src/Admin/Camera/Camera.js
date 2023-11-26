@@ -13,7 +13,7 @@ function Camera() {
         <div className="boxVideo">
           <div className="title">Camera 1</div>
           <ReactPlayer
-            url="https://youtu.be/If6pOnTkQbw"
+            url="https://youtu.be/0-FqGnUDQUs"
             width="450px"
             height="280px"
             playing={true}
@@ -69,7 +69,7 @@ function Camera() {
         <div className="boxVideo">
           <div className="title">Camera 4</div>
           <ReactPlayer
-            url="https://youtu.be/kzd4CLKSSpg"
+            url="https://youtu.be/If6pOnTkQbw"
             width="450px"
             height="280px"
             playing={true}
