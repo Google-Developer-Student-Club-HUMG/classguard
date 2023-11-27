@@ -15,13 +15,13 @@ function Camera() {
       <div className="flex center">
         <div className="boxVideo">
           <div className="title">Camera 1</div>
-          <video width="400" src={videoCam1} controls autoplay loop={true} muted>
+          <video width="500" src={videoCam1} controls autoplay loop={true} muted>
             Your browser does not support HTML video.
           </video>
         </div>
         <div className="boxVideo">
           <div className="title">Camera 2</div>
-          <video width="400" src={videoCam2} controls autoplay loop={true} muted>
+          <video width="500" src={videoCam2} controls autoplay loop={true} muted>
             Your browser does not support HTML video.
           </video>
         </div>
@@ -29,13 +29,13 @@ function Camera() {
       <div className="flex center">
         <div className="boxVideo">
           <div className="title">Camera 3</div>
-          <video width="400" src={videoCam3} controls autoplay loop={true} muted>
+          <video width="500" src={videoCam3} controls autoplay loop={true} muted>
             Your browser does not support HTML video.
           </video>
         </div>
         <div className="boxVideo">
           <div className="title">Camera 4</div>
-          <video width="400" src={videoCam4} controls autoplay loop={true} muted>
+          <video width="500" src={videoCam4} controls autoplay loop={true} muted>
             Your browser does not support HTML video.
           </video>
         </div>
